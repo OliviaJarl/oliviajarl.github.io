@@ -1,3 +1,3 @@
 export default function Works() {
-  return <>this is the works page</>;
+  return <>This is the works page</>;
 }

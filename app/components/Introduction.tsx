@@ -2,13 +2,14 @@ import { HStack, Box, Image, Text } from "@chakra-ui/react";
 
 const Introduction = () => {
   return (
-    <HStack paddingLeft={200} paddingTop={100} bg={"dodgerblue"}>
-      <Box paddingRight={1} bg={"coral"} width="50%">
+    <HStack paddingLeft={200} paddingTop={100}>
+      <Box paddingRight={1} width="50%">
         <Text fontSize="4xl">
-          Hi, my name is Olivia! I am an engineering student at Chalmers.
+          Hi! My name is Olivia, I am an engineering student at Chalmers
+          University of Technology.
         </Text>
         <Text fontSize="2xl">
-          I do UX and UI design, and is also into frontend-development.
+          I do UX and UI design, and I am also into frontend-development.
         </Text>
       </Box>
       <Image
