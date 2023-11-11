@@ -22,7 +22,7 @@ export function Footer() {
           </Link>
         </HStack>
         <Flex justifyContent="center">
-          <Text>Designed and coded by Olivia Jarl</Text>
+          <Text>Designed and coded by Olivia Jarl, 2023.</Text>
         </Flex>
       </footer>
     </>

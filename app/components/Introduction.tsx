@@ -1,9 +1,13 @@
-import { HStack, Box, Image, Text } from "@chakra-ui/react";
+import { HStack, Box, Image, Text, SimpleGrid } from "@chakra-ui/react";
 
 const Introduction = () => {
   return (
-    <HStack paddingLeft={200} paddingTop={100}>
-      <Box paddingRight={1} width="50%">
+    <SimpleGrid
+      columns={{ sm: 1, md: 1, lg: 2, xl: 2 }}
+      spacing={4}
+      padding={20}
+    >
+      <Box paddingRight={10}>
         <Text fontSize="4xl">
           Hi! My name is Olivia, I am an engineering student at Chalmers
           University of Technology.
@@ -18,7 +22,7 @@ const Introduction = () => {
         boxSize="400px"
         borderRadius={200}
       />
-    </HStack>
+    </SimpleGrid>
   );
 };
 
