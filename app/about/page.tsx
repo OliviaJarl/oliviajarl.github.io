@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "../components/Button";
 
 export default function About() {
@@ -5,6 +6,7 @@ export default function About() {
     <>
       this is the about page
       <Button />
+      <Image width={200} height={200} src="/next.svg" alt="next logo" />
     </>
   );
 }

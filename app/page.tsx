@@ -1,9 +1,5 @@
-import Link from "next/link";
+import { Grid, GridItem } from "@chakra-ui/react";
 
 export default function Home() {
-  return (
-    <main>
-      Go To About page <Link href={"/about"}> Click here </Link>
-    </main>
-  );
+  return <div>Introduction component </div>;
 }
