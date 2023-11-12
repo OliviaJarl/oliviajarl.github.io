@@ -54,7 +54,7 @@ const WorkSection = ({ name, image, description, url, id }: Props) => {
         <Heading>{name}</Heading>
         <Text>{description}</Text>
         <Link href={url}>
-          <Button marginTop={4}>Read more</Button>
+          <Button>Read more</Button>
         </Link>
       </Box>
     </VStack>

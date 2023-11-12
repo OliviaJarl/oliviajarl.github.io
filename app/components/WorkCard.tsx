@@ -1,21 +1,24 @@
 import {
+  Flex,
   Image,
   Button,
   Card,
   CardBody,
   CardFooter,
-  Flex,
   Heading,
+  Spacer,
   Text,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface Props {
   name: string;
   image: string;
   description: string;
+  url: string;
 }
 
-const WorkCard = ({ name, image, description }: Props) => {
+const WorkCard = ({ name, image, description, url }: Props) => {
   return (
     <Card borderRadius={10} overflow="hidden">
       <Image alt={"Thumbnail for the project " + name} src={image} />
@@ -25,8 +28,10 @@ const WorkCard = ({ name, image, description }: Props) => {
           {description}
         </Text>
       </CardBody>
-      <CardFooter alignContent="right">
-        <Button>View here</Button>
+      <CardFooter>
+        <Link href={url}>
+          <Button>Read more</Button>
+        </Link>
       </CardFooter>
     </Card>
   );
