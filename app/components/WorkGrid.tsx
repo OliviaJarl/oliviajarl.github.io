@@ -7,6 +7,7 @@ const WorkGrid = () => {
       columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
       spacing={4}
       padding={20}
+      justifyContent="center"
     >
       <WorkCard
         name="Zoolo"

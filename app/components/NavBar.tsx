@@ -8,9 +8,10 @@ import { usePathname } from "next/navigation";
 const NavBar = () => {
   const pathname = usePathname();
   return (
-    <HStack width={40} justifyContent="space-between">
+    <HStack justifyContent="space-between">
       <Link href={"/about"}>
         <Text
+          paddingRight="30px"
           fontSize="xl"
           fontWeight={pathname == "/about" ? "bold" : "normal"}
         >

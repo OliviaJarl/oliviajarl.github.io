@@ -1,6 +1,4 @@
 "use client";
-
-import useMediaQuery from "../hooks/useMediaQuery";
 import WorkSection from "./components/WorkSection";
 
 export default function Works() {
