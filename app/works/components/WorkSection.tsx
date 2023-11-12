@@ -1,4 +1,3 @@
-import useMediaQuery from "@/app/hooks/useMediaQuery";
 import {
   Box,
   Button,
@@ -7,6 +6,7 @@ import {
   Image,
   Text,
   VStack,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 interface Props {
@@ -15,27 +15,28 @@ interface Props {
   description: string;
 }
 const WorkSection = ({ name, image, description }: Props) => {
-  if (useMediaQuery(900)) {
+  const [screenCheck] = useMediaQuery("(min-width: 1000px)");
+  if (screenCheck) {
     return (
-      <VStack>
+      <HStack justifyContent="center" padding={10}>
         <Box>
           <Heading>{name}</Heading>
           <Text>{description}</Text>
           <Button>Read more</Button>
         </Box>
         <Image alt={"Thumbnail for the project " + name} src={image} />
-      </VStack>
+      </HStack>
     );
   }
   return (
-    <HStack>
+    <VStack justifyContent="center" padding={10}>
+      <Image alt={"Thumbnail for the project " + name} src={image} />
       <Box>
         <Heading>{name}</Heading>
         <Text>{description}</Text>
         <Button>Read more</Button>
       </Box>
-      <Image alt={"Thumbnail for the project " + name} src={image} />
-    </HStack>
+    </VStack>
   );
 };
 

@@ -1,20 +1,22 @@
+"use client";
 import { Center, HStack, VStack, useMediaQuery } from "@chakra-ui/react";
 import IntroductionContent from "./IntroductionContent";
 
 const Introduction = () => {
-  if (useMediaQuery("(min-width: 1000px)")) {
+  const [screenCheck] = useMediaQuery("(min-width: 1000px)");
+  if (screenCheck) {
     return (
-      <Center>
+      <Center paddingTop="40px">
         <HStack width={"80%"}>
-          <IntroductionContent />
+          <IntroductionContent imageSize="400px" />
         </HStack>
       </Center>
     );
   }
   return (
-    <Center>
-      <VStack width={"80%"}>
-        <IntroductionContent />
+    <Center paddingTop="40px">
+      <VStack width={"90%"}>
+        <IntroductionContent imageSize="200px" />
       </VStack>
     </Center>
   );

@@ -1,6 +1,8 @@
 import { HStack, Box, Image, Text, SimpleGrid } from "@chakra-ui/react";
-
-const IntroductionContent = () => {
+interface Props {
+  imageSize: string;
+}
+const IntroductionContent = ({imageSize}: Props) => {
   return (
     <>
       <Box paddingRight={10}>
@@ -15,7 +17,7 @@ const IntroductionContent = () => {
       <Image
         src="/linkedinken1.jpg"
         alt="Profile image"
-        boxSize="400px"
+        boxSize={imageSize}
         borderRadius={200}
       />
     </>
