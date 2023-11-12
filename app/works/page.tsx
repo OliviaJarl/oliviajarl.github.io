@@ -11,6 +11,8 @@ export default function Works() {
           name={project.name}
           image={project.image}
           description={project.description}
+          url={project.url}
+          id={project.id}
         />
       ))}
     </>
