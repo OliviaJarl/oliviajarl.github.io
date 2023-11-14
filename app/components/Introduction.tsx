@@ -1,24 +1,28 @@
-"use client";
-import { Center, HStack, VStack, useMediaQuery } from "@chakra-ui/react";
-import IntroductionContent from "./IntroductionContent";
+import { Flex, Center, Box, Image, Text } from "@chakra-ui/react";
 
 const Introduction = () => {
-  const [screenCheck] = useMediaQuery("(min-width: 1000px)");
-  if (screenCheck) {
-    return (
-      <Center paddingTop="40px">
-        <HStack width={"80%"}>
-          <IntroductionContent imageSize="400px" />
-        </HStack>
-      </Center>
-    );
-  }
   return (
-    <Center paddingTop="40px">
-      <VStack width={"90%"}>
-        <IntroductionContent imageSize="200px" />
-      </VStack>
-    </Center>
+    <>
+      <Center padding={40}>
+        <Flex flexDirection={{ base: "column", lg: "row" }}>
+          <Box paddingRight={10}>
+            <Text fontSize="4xl">
+              Hi! My name is Olivia, I am an engineering student at Chalmers
+              University of Technology.
+            </Text>
+            <Text fontSize="2xl">
+              I do UX and UI design, and I am also into frontend-development.
+            </Text>
+          </Box>
+          <Image
+            src="/linkedinken1.jpg"
+            alt="Profile image"
+            borderRadius={200}
+            boxSize={{ base: "200px", sm: "300px", lg: "400px" }}
+          />
+        </Flex>
+      </Center>
+    </>
   );
 };
 
