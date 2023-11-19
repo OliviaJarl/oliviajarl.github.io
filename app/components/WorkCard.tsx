@@ -23,14 +23,14 @@ const WorkCard = ({ name, image, description, url }: Props) => {
     <Card borderRadius={10} overflow="hidden">
       <Image alt={"Thumbnail for the project " + name} src={image} />
       <CardBody>
-        <Heading size="md">{name}</Heading>
-        <Text paddingTop={2} fontSize="md">
+        <Heading size={{ base: "xs", sm: "md" }}>{name}</Heading>
+        <Text paddingTop={2} fontSize={{ base: "xs", sm: "md" }}>
           {description}
         </Text>
       </CardBody>
       <CardFooter>
         <Link href={url}>
-          <Button>Read more</Button>
+          <Button size={{ base: "sm", sm: "md" }}>Read more</Button>
         </Link>
       </CardFooter>
     </Card>
