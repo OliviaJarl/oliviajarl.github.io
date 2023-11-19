@@ -28,7 +28,7 @@ const WorkCard = ({ name, image, description, url }: Props) => {
           {description}
         </Text>
       </CardBody>
-      <CardFooter>
+      <CardFooter justify="flex-end">
         <Link href={url}>
           <Button size={{ base: "sm", sm: "md" }}>Read more</Button>
         </Link>

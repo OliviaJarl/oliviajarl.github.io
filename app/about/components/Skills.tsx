@@ -3,7 +3,7 @@ import ResumeItem from "./ResumeItem";
 const Skills = () => {
   return (
     <Flex flexDir="column">
-      <Heading size="md" color="#323F56" paddingBottom={5}>
+      <Heading size="md" color="brand.100" paddingBottom={5}>
         Software & programming experience
       </Heading>
       <ResumeItem

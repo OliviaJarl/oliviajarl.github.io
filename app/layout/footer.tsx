@@ -9,16 +9,16 @@ export function Footer() {
       <footer style={{ marginTop: "auto" }}>
         <HStack justifyContent="center">
           <a href="mailto:olivia.ce.jarl@gmail.com">
-            <Icon as={IoIosMail} boxSize={6} />
+            <Icon as={IoIosMail} boxSize={6} color="brand.100" />
           </a>
           <Link
             isExternal
             href="https://www.linkedin.com/in/olivia-jarl-944b77226/"
           >
-            <Icon as={IoLogoLinkedin} boxSize={6} />
+            <Icon as={IoLogoLinkedin} boxSize={6} color="brand.100" />
           </Link>
           <Link isExternal href="https://github.com/OliviaJarl">
-            <Icon as={IoLogoGithub} boxSize={6} />
+            <Icon as={IoLogoGithub} boxSize={6} color="brand.100" />
           </Link>
         </HStack>
         <Flex justifyContent="center">

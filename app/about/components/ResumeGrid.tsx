@@ -7,7 +7,7 @@ import Skills from "./Skills";
 const ResumeGrid = () => {
   return (
     <>
-      <Heading size="xl" paddingLeft={50}>
+      <Heading size="xl" paddingLeft={50} color="brand.100">
         Resume
       </Heading>
       <Grid
