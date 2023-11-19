@@ -1,10 +1,10 @@
-import { Button } from "../components/Button";
-
+import Description from "./components/Description";
+import ResumeGrid from "./components/ResumeGrid";
 export default function About() {
   return (
     <>
-      this is the about page
-      <Button />
+      <Description />
+      <ResumeGrid />
     </>
   );
 }
