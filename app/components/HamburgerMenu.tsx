@@ -7,7 +7,7 @@ import {
   Button,
   IconButton,
 } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, CSSProperties } from "react";
 import { IoClose } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
 import { usePathname } from "next/navigation";
@@ -16,7 +16,8 @@ import Link from "next/link";
 
 const HamburgerMenu = () => {
   const pathname = usePathname();
-  const [displayMenu, setDisplayMenu] = useState("none");
+  const [displayMenu, setDisplayMenu] =
+    useState<CSSProperties["display"]>("none");
   return (
     <Flex justifyContent="space-between">
       <Flex display={{ base: "none", sm: "flex" }} align={"center"}>
@@ -26,6 +27,9 @@ const HamburgerMenu = () => {
             marginRight="40px"
             color="brand.100"
             fontWeight={pathname == "/about" ? "bold" : "normal"}
+            _hover={{
+              fontWeight: "bold",
+            }}
           >
             About
           </Text>
@@ -35,6 +39,9 @@ const HamburgerMenu = () => {
             fontSize="xl"
             color="brand.100"
             fontWeight={pathname == "/works" ? "bold" : "normal"}
+            _hover={{
+              fontWeight: "bold",
+            }}
           >
             Works
           </Text>

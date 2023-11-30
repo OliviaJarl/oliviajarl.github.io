@@ -1,7 +1,8 @@
+import { Center } from "@chakra-ui/react";
 export default function DigitalRecords() {
   return (
-    <>
-      <p>This is the page for the project DigitalRecords</p>
-    </>
+    <Center>
+      <p>This page is under construction.</p>
+    </Center>
   );
 }
