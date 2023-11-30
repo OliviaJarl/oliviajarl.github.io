@@ -1,5 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import { Flex, Text } from "@chakra-ui/react";
 interface Props {
   heading: string;
   description?: string;
@@ -7,17 +6,25 @@ interface Props {
 }
 
 const ResumeItem = ({ heading, description, time }: Props) => {
+  if (time) {
+    return (
+      <Flex flexDir={{ base: "column", md: "row" }} paddingBottom={5}>
+        <Flex minWidth={{ md: "35%" }}>
+          <Text fontWeight="bold" whiteSpace="nowrap">
+            {time}
+          </Text>
+        </Flex>
+        <Flex flexDir="column" minWidth={{ md: "65%" }}>
+          <Text fontWeight="bold">{heading}</Text>
+          <Text>{description}</Text>
+        </Flex>
+      </Flex>
+    );
+  }
   return (
-    <Flex flexDir="row" paddingBottom={5} justifyContent="space-between">
-      <Flex flexDir="column" paddingRight={{ base: "40px", md: "80px" }}>
-        <Text fontWeight="medium">{heading}</Text>
-        <Text>{description}</Text>
-      </Flex>
-      <Flex minWidth="18%">
-        <Text fontWeight="medium" whiteSpace="nowrap">
-          {time}
-        </Text>
-      </Flex>
+    <Flex flexDir="column" paddingBottom={5}>
+      <Text fontWeight="bold">{heading}</Text>
+      <Text>{description}</Text>
     </Flex>
   );
 };

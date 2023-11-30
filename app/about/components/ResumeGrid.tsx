@@ -7,7 +7,7 @@ import Skills from "./Skills";
 const ResumeGrid = () => {
   return (
     <>
-      <Heading size="xl" paddingLeft={50} color="brand.100">
+      <Heading size="xl" color="brand.100">
         Resume
       </Heading>
       <Grid
@@ -20,16 +20,15 @@ const ResumeGrid = () => {
         }}
         gap="1"
         columnGap="10"
-        padding={50}
         gridTemplateColumns={{ base: "1fr", md: "2fr 1fr" }}
       >
-        <GridItem pl="2" area={"skills"}>
+        <GridItem area={"skills"}>
           <Skills />
         </GridItem>
-        <GridItem pl="2" area={"education"}>
+        <GridItem area={"education"}>
           <Education />
         </GridItem>
-        <GridItem pl="2" area={"work"}>
+        <GridItem area={"work"}>
           <Work />
         </GridItem>
       </Grid>

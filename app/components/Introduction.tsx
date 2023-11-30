@@ -1,4 +1,4 @@
-import { Flex, Center, Box, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Center, Box, Text } from "@chakra-ui/react";
 
 const Introduction = () => {
   return (
@@ -17,7 +17,8 @@ const Introduction = () => {
               fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
               align={{ base: "center", md: "left" }}
             >
-              I do UX and UI design, and I am also into frontend-development.
+              I do product design, and I also have an interest in front-end
+              development.
             </Text>
           </Box>
           <Image

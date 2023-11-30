@@ -24,13 +24,22 @@ const WorkSection = ({ name, image, description, url, id }: Props) => {
       padding={10}
       flexDirection={{ base: "column", lg: "row" }}
     >
-      <Image alt={"Thumbnail for the project " + name} src={image} />
-      <Box>
+      <Image
+        w={{ base: "100%", lg: "60%" }}
+        alt={"Thumbnail for the project " + name}
+        src={image}
+      />
+      <Box
+        paddingLeft={{ base: "0px", lg: "10px" }}
+        paddingTop={{ base: "10px", lg: "0px" }}
+      >
         <Heading>{name}</Heading>
         <Text>{description}</Text>
-        <Link href={url}>
-          <Button marginTop={4}>Read more</Button>
-        </Link>
+        <Flex justifyContent="flex-end">
+          <Link href={url}>
+            <Button marginTop={4}>Read more</Button>
+          </Link>
+        </Flex>
       </Box>
     </Flex>
   );

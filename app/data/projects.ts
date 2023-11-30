@@ -7,8 +7,8 @@ export interface Project {
 }
 const projects = [{
     name: "Zoolo",
-    image: "/zoolo/thumbnail.png",
-    description: "A project where we designed a storage solution for preschools.",
+    image: "/zoolo/thumbnail.svg",
+    description: "The theme of the project was the storage of outdoor toys in preschools. We performed user studies, and the results were used to develop a new storage solution.",
     url: "/works/zoolo",
     id: 1,
 },
@@ -29,7 +29,7 @@ const projects = [{
 {
     name: "Twister with a twist",
     image: "/twister/thumbnail.png",
-    description: "The project was collbaoration with the entertainment company Prison Island, which have sites with sets of action rooms. The theme of the project was Teamwork.",
+    description: "The project was collbaoration with the entertainment company Prison Island, which has sites with sets of action rooms. The theme of the project was Teamwork.",
     url: "/works/twister",
     id: 4,
 }

@@ -1,7 +1,9 @@
+import { Center } from "@chakra-ui/react";
+
 export default function MovieMatch() {
   return (
-    <>
-      <p>This is the page for the project MovieMatch</p>
-    </>
+    <Center>
+      <p>This page is under construction.</p>
+    </Center>
   );
 }

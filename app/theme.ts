@@ -18,8 +18,26 @@ const theme = extendTheme({ config,
   colors: {
     brand: {
       100: "#323F56",
+      200: "#4d6082",
     },
   },
+  components: {
+    Text: {
+      baseStyle: {
+        fontSize: {
+          base: "xs",
+          sm: "md",
+          md: "lg",
+        }
+      },
+    },
+    Heading: {
+      baseStyle: {
+        color: "#323F56"
+      },
+    },
+  }
+  
 })
 
 export default theme;
