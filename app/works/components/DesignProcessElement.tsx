@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 interface DesignProcess {
   title: string;
@@ -13,22 +13,30 @@ const DesignProcessElement = ({
   if (images[0] != "") {
     return (
       <>
-        <Flex flexDir={{ base: "column", md: "row" }} paddingBottom={{ base: "10px", md: "40px" }}>
+        <Flex
+          flexDir={{ base: "column", md: "row" }}
+          marginBottom={{ base: "30px", md: "40px" }}
+        >
           <Flex flexDir="column" w={{ md: "70%" }}>
-            <Heading size="md" paddingBottom="10px">
+            <Heading size="md" marginBottom="10px">
               {title}
             </Heading>
-            <Text paddingRight={{ md: "30px" }}>{description}</Text>
+            <Text marginRight={{ md: "30px" }}>{description}</Text>
           </Flex>
-
-          <Flex flexDir="column" w={{ base: "70%", md: "40%" }}>
-            {images?.map((image) => (
-              <Image
-                key={image.charAt(image.length - 1)}
-                src={image}
-                alt={"Design process image " + image}
-              />
-            ))}
+          <Flex
+            flexDir="column"
+            w={{ base: "100%", md: "40%" }}
+            justify="center"
+          >
+            <Box w="100%" justifyContent="center" display="flex">
+              {images?.map((image) => (
+                <Image
+                  key={image.charAt(image.length - 1)}
+                  src={image}
+                  alt={"Design process image " + image}
+                />
+              ))}
+            </Box>
           </Flex>
         </Flex>
       </>
@@ -36,10 +44,10 @@ const DesignProcessElement = ({
   }
   return (
     <>
-      <Heading size="md" paddingBottom="10px">
+      <Heading size="md" marginBottom="10px">
         {title}
       </Heading>
-      <Text paddingBottom="60px">{description}</Text>
+      <Text marginBottom={{ base: "30px", md: "40px" }}>{description}</Text>
     </>
   );
 };

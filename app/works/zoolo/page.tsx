@@ -5,41 +5,39 @@ import Reflection from "../components/Reflection";
 import zooloData from "@/app/data/zoolo";
 import DesignProcessElement from "../components/DesignProcessElement";
 export default function Zoolo() {
-  const bottomPadding = { base: "10px", md: "40px" };
-  const bottomPaddingHeading = { base: "10px", md: "25px" };
+  const bottomMargin = { base: "10px", md: "40px" };
+  const bottomMarginHeading = { base: "10px", md: "25px" };
   return (
     <>
       <Image
         src={zooloData["poster_image"]}
         alt="Zoolo image"
-        paddingBottom={{ base: "20px", md: "50px" }}
+        marginBottom={{ base: "20px", md: "50px" }}
       />
       <Flex
-        paddingLeft={{ base: "20px", md: "20px", lg: "270px" }}
-        paddingRight={{ base: "20px", md: "20px", lg: "270px" }}
+        marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
+        marginRight={{ base: "30px", md: "40px", xl: "270px" }}
         flexDir="column"
       >
-        <Flex paddingBottom={bottomPadding} flexDir="column">
-          <Heading size="lg" paddingBottom={bottomPaddingHeading}>
+        <Flex marginBottom={bottomMargin} flexDir="column">
+          <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
           </Heading>
           <Text>{zooloData["about"]}</Text>
         </Flex>
         <Details
-          role="In this project, we did everything together."
-          challenge="Current tool storage solutions are not adapted to the children´s
-                physical and cognitive skills, nor do they increase motivation
-                when cleaning up."
-          projectTime="18 weeks"
+          role={zooloData["details"]["role"]}
+          challenge={zooloData["details"]["challenge"]}
+          projectTime={zooloData["details"]["projectTime"]}
         />
-        <Heading paddingBottom={bottomPaddingHeading} size="lg">
+        <Heading marginBottom={bottomMarginHeading} size="lg">
           Process overview
         </Heading>
         <SimpleGrid
           columns={{ sm: 1, md: 3, lg: 5 }}
           spacing={4}
           justifyContent="center"
-          paddingBottom={bottomPadding}
+          marginBottom={bottomMargin}
         >
           {zooloData["process_overview"].map((process) => (
             <ProcessOverview
@@ -49,7 +47,7 @@ export default function Zoolo() {
             />
           ))}
         </SimpleGrid>
-        <Heading size="lg" paddingBottom={bottomPaddingHeading}>
+        <Heading size="lg" marginBottom={bottomMarginHeading}>
           Design process
         </Heading>
         {zooloData["design_process"].map((step) => (
@@ -60,14 +58,14 @@ export default function Zoolo() {
             images={step.images}
           />
         ))}
-        <Heading size="lg" paddingBottom={bottomPaddingHeading}>
+        <Heading size="lg" marginBottom={bottomMarginHeading}>
           Result
         </Heading>
-        <Text paddingBottom={bottomPadding}>{zooloData["results"]}</Text>
+        <Text marginBottom={bottomMargin}>{zooloData["results"]}</Text>
         <Image src="/zoolo/result1.jpg" alt="Zoolo result 1" />
         <Flex
           flexDir={{ base: "column", md: "row" }}
-          paddingBottom={bottomPadding}
+          marginBottom={bottomMargin}
         >
           <Image
             src="/zoolo/result2.png"
@@ -80,14 +78,14 @@ export default function Zoolo() {
             w={{ md: "42%" }}
           />
         </Flex>
-        <Heading size="lg" paddingBottom={bottomPaddingHeading}>
+        <Heading size="lg" marginBottom={bottomMarginHeading}>
           Reflections
         </Heading>
         <SimpleGrid
           columns={{ sm: 1, md: 2, lg: 3 }}
           spacing={8}
           justifyContent="center"
-          paddingBottom={bottomPadding}
+          marginBottom={bottomMargin}
         >
           {zooloData["reflections"].map((reflection) => (
             <Reflection

@@ -21,7 +21,7 @@ const WorkSection = ({ name, image, description, url, id }: Props) => {
   return (
     <Flex
       justifyContent="center"
-      padding={10}
+      margin={10}
       flexDirection={{ base: "column", lg: "row" }}
     >
       <Image
@@ -30,8 +30,8 @@ const WorkSection = ({ name, image, description, url, id }: Props) => {
         src={image}
       />
       <Box
-        paddingLeft={{ base: "0px", lg: "10px" }}
-        paddingTop={{ base: "10px", lg: "0px" }}
+        marginLeft={{ base: "0px", lg: "10px" }}
+        marginTop={{ base: "10px", lg: "0px" }}
       >
         <Heading>{name}</Heading>
         <Text>{description}</Text>

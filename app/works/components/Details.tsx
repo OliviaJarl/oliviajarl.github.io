@@ -15,12 +15,10 @@ interface Props {
 }
 const Details = ({ projectTime, role, challenge }: Props) => {
   return (
-    <Center
-      paddingBottom={{ base: "10px", md: "40px" }}
-    >
+    <Center marginBottom={{ base: "10px", md: "40px" }}>
       <TableContainer w={{ base: "100%", md: "95%" }}>
         <Table variant="simple" size="md">
-          <Tbody whiteSpace="pre" fontSize={{ base: "xs", md: "lg" }}>
+          <Tbody whiteSpace="pre" fontSize={{ base: "xs", md: "lg", lg: "xl" }}>
             <Tr>
               <Td fontWeight="bold" verticalAlign="top">
                 Challenge

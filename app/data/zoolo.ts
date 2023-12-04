@@ -1,6 +1,12 @@
 const zooloData = {
     about: "This was a group project that ran over two courses during my bachelor’s in industrial design engineering. In the first course, we were supposed to decide on a subject to study, and we chose outdoor storage solutions for toys in preschools. The study included interviews with preschool staff, observations of the usage of existing solutions and literature studies on children’s cognitive and motor development. We categorised and analysed the gathered data, and the results were used in the second course to support the development of a new storage solution. During this process, we worked iteratively with our ideas and performed user evaluations to understand how our ideas met the user’s needs.",
     poster_image: "/zoolo/poster_image.svg",
+    details: 
+        {
+        role:"In this projects we did everything together.",
+        challenge:"Current tool storage solutions are not adapted to the children´s physical and cognitive skills, nor do they increase motivationwhen cleaning up.",
+        projectTime:"18 weeks"}
+    ,
     results: "We created a storage solution called Zoolo that is inspired by suitcases. The preschool staff can easily drag it in and out of a storage shed, and the adjustable handle enables an ergonomic work position. The children fetch the toys from the opening in the bottom, and to make the pick-up funnier, the children put the toys in the top opening, which is shaped like a mouth. Zoolo needs to be stable since there is a risk that children climb on it. Therefore, the wheels are slightly tilted, and the handle is an extra stabilizer. The rims of the wheels are closed to prevent pinch point hazards.",
     process_overview: [
         {

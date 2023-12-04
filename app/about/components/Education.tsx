@@ -3,7 +3,7 @@ import ResumeItem from "./ResumeItem";
 const Education = () => {
   return (
     <Flex flexDir="column">
-      <Heading size="md" color="brand.100" paddingBottom={5}>
+      <Heading size="md" color="brand.100" marginBottom={5}>
         Education
       </Heading>
       <ResumeItem
@@ -14,7 +14,7 @@ const Education = () => {
         time="08.2022 -"
       />
       <ResumeItem
-        heading="Industrial design engineering - Bachelor's degree, Chalmers University of Technology"
+        heading="Industrial design engineering - BSE, Chalmers University of Technology"
         description="Bachelor's thesis: Portable, digital medical record to the emergency department"
         time="08.2019 - 06.2022"
       />

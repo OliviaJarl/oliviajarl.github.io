@@ -15,7 +15,7 @@ const projects = [{
 {
     name: "Portable, digital medical record",
     image: "/digital_records/thumbnail.svg",
-    description: "Bachelor's thesis made in collaboration with the company Predicare and the physiatric emergency department at Östra Sjukhuset.",
+    description: "This project was my bachelor's thesis, where we developed a portable, digital medical record for a psychiatric emergency department.",
     url: "/works/digital_records",
     id: 2,
 },

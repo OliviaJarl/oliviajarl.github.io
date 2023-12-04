@@ -1,14 +1,21 @@
 import React from "react";
-import { GridItem, Grid, Heading } from "@chakra-ui/react";
+import { Box, GridItem, Grid, Heading } from "@chakra-ui/react";
 import Education from "./Education";
 import Work from "./Work";
 import Skills from "./Skills";
 
 const ResumeGrid = () => {
   return (
-    <>
-      <Heading size="xl" color="brand.100">
-        Resume
+    <Box
+      marginLeft={{ base: "10px", md: "60px" }}
+      marginRight={{ base: "10px", md: "60px" }}
+    >
+      <Heading
+        size="lg"
+        color="brand.100"
+        marginBottom={{ base: "10px", md: "25px" }}
+      >
+        Short resume
       </Heading>
       <Grid
         templateAreas={{
@@ -32,7 +39,7 @@ const ResumeGrid = () => {
           <Work />
         </GridItem>
       </Grid>
-    </>
+    </Box>
   );
 };
 

@@ -1,7 +1,7 @@
 import { HStack, Image, Flex, Text } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
 import Link from "next/link";
-import HamburgerMenu from "../components/HamburgerMenu";
+import NavMenu from "../components/NavMenu";
 
 export function Header() {
   return (
@@ -17,7 +17,7 @@ export function Header() {
             />
           </div>
         </Link>
-        <HamburgerMenu />
+        <NavMenu />
       </Flex>
     </header>
   );

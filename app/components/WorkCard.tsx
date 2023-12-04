@@ -24,7 +24,7 @@ const WorkCard = ({ name, image, description, url }: Props) => {
       <Image alt={"Thumbnail for the project " + name} src={image} />
       <CardBody>
         <Heading size={{ base: "xs", sm: "md" }}>{name}</Heading>
-        <Text paddingTop={2} fontSize={{ base: "xs", sm: "md" }}>
+        <Text marginTop={2} fontSize={{ base: "xs", sm: "md" }}>
           {description}
         </Text>
       </CardBody>
