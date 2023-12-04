@@ -3,7 +3,7 @@ import ResumeItem from "./ResumeItem";
 const Work = () => {
   return (
     <Flex flexDir="column">
-      <Heading size="md" color="brand.100" paddingBottom={5}>
+      <Heading size="md" color="brand.100" marginBottom={5}>
         Work experience
       </Heading>
       <ResumeItem
@@ -16,12 +16,6 @@ const Work = () => {
         heading="Seasonal work as a salesperson at Systembolaget"
         description="I had customer meetings, worked in the cash register and unpacked goods."
         time="06.2020 - 08.2022"
-      />
-      <ResumeItem
-        heading="Conductor assistant at the preschool Stegen, Bräcke diakoni"
-        description="The preschool applied Conductive education and as a conductor assistant I got
-        to help the children with their tasks under the guidance of a conductor."
-        time="01.2019 - 07.2019"
       />
     </Flex>
   );

@@ -14,7 +14,7 @@ import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 
-const HamburgerMenu = () => {
+const NavMenu = () => {
   const pathname = usePathname();
   const [displayMenu, setDisplayMenu] =
     useState<CSSProperties["display"]>("none");
@@ -71,8 +71,9 @@ const HamburgerMenu = () => {
         <Flex justifyContent="flex-end">
           <IconButton
             aria-label="Close-button"
-            marginTop={3}
-            marginRight={3}
+            bg="none"
+            marginTop="15px"
+            marginRight="16px"
             fontSize={40}
             color="brand.100"
             display={{ base: "flex", sm: "none" }}
@@ -109,4 +110,4 @@ const HamburgerMenu = () => {
   );
 };
 
-export default HamburgerMenu;
+export default NavMenu;

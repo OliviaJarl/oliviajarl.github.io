@@ -10,7 +10,7 @@ const ProcessOverview = ({ image, title }: Props) => {
       <Image
         src={image}
         alt="Process overview"
-        paddingBottom={{ base: "20px", md: "50px" }}
+        marginBottom={{ base: "20px", md: "50px" }}
       />
       <Text>{title}</Text>
     </VStack>

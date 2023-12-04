@@ -4,8 +4,8 @@ import projects from "../data/projects";
 
 const WorkGrid = () => {
   return (
-    <Box padding={{ base: 10, sm: 20 }}>
-      <Heading paddingBottom="15px">Works</Heading>
+    <Box margin={{ base: 10, sm: 20 }}>
+      <Heading marginBottom="15px">Works</Heading>
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
         spacing={8}

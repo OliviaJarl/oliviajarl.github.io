@@ -3,7 +3,11 @@ import { Flex, Image, Center, Box, Text } from "@chakra-ui/react";
 const Introduction = () => {
   return (
     <>
-      <Center padding={{ base: "20px", sm: "40px", lg: "100px" }}>
+      <Center
+        marginLeft={{ base: "20px", sm: "40px", lg: "100px" }}
+        marginRight={{ base: "20px", sm: "40px", lg: "100px" }}
+        marginTop={{ base: "10px", sm: "20px", lg: "40px" }}
+      >
         <Flex flexDirection={{ base: "column", md: "row" }} alignItems="center">
           <Box paddingRight={{ base: 0, md: 10 }}>
             <Text
@@ -17,7 +21,7 @@ const Introduction = () => {
               fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
               align={{ base: "center", md: "left" }}
             >
-              I do product design, and I also have an interest in front-end
+              I do UX design, and I also have an interest in front-end
               development.
             </Text>
           </Box>

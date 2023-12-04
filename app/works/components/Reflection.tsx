@@ -7,7 +7,7 @@ const Reflection = ({ title, content }: Props) => {
   return (
     <>
       <Box>
-        <Heading size="md" paddingBottom={{ base: "5px", md: "15px" }}>
+        <Heading size="md" marginBottom={{ base: "5px", md: "15px" }}>
           {title}
         </Heading>
         <Text>{content}</Text>

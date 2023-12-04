@@ -8,7 +8,7 @@ interface Props {
 const ResumeItem = ({ heading, description, time }: Props) => {
   if (time) {
     return (
-      <Flex flexDir={{ base: "column", md: "row" }} paddingBottom={5}>
+      <Flex flexDir={{ base: "column", md: "row" }} marginBottom={5}>
         <Flex minWidth={{ md: "35%" }}>
           <Text fontWeight="bold" whiteSpace="nowrap">
             {time}
@@ -22,7 +22,7 @@ const ResumeItem = ({ heading, description, time }: Props) => {
     );
   }
   return (
-    <Flex flexDir="column" paddingBottom={5}>
+    <Flex flexDir="column" marginBottom={5}>
       <Text fontWeight="bold">{heading}</Text>
       <Text>{description}</Text>
     </Flex>
