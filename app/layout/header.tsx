@@ -1,5 +1,4 @@
 import { HStack, Image, Flex, Text } from "@chakra-ui/react";
-import NavBar from "../components/NavBar";
 import Link from "next/link";
 import NavMenu from "../components/NavMenu";
 
