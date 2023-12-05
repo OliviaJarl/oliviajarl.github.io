@@ -20,7 +20,7 @@
     "@fontsource/poppins": "^5.0.8",
     "@fontsource/raleway": "^5.0.15",
     "@fontsource/roboto": "^5.0.8",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.16.14",
     "next": "^13",
     "react": "^18",
     "react-dom": "^18",

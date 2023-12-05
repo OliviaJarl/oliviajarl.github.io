@@ -9,7 +9,7 @@ export default function Works() {
         <WorkSection
           key={project.id}
           name={project.name}
-          image={project.image}
+          image={project.image_big}
           description={project.description}
           url={project.url}
           id={project.id}
