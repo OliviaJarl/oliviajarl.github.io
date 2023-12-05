@@ -12,8 +12,11 @@ export default function Zoolo() {
       <Image
         src={zooloData["poster_image"]}
         alt="Zoolo image"
-        marginBottom={{ base: "20px", md: "50px" }}
+        marginBottom={{ base: "20px", md: "30px" }}
       />
+      <Heading size="2xl" marginBottom={"10px"} textAlign="center">
+        {zooloData["title"]}
+      </Heading>
       <Flex
         marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
         marginRight={{ base: "30px", md: "40px", xl: "270px" }}

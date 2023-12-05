@@ -20,10 +20,10 @@ const NavMenu = () => {
     useState<CSSProperties["display"]>("none");
   return (
     <Flex justifyContent="space-between">
-      <Flex display={{ base: "none", sm: "flex" }} align={"center"}>
+      <Flex display={{ base: "none", md: "flex" }} align={"center"}>
         <Link href={"/about"}>
           <Text
-            fontSize="xl"
+            fontSize="2xl"
             marginRight="40px"
             color="brand.100"
             fontWeight={pathname == "/about" ? "bold" : "normal"}
@@ -36,7 +36,7 @@ const NavMenu = () => {
         </Link>
         <Link href={"/works"}>
           <Text
-            fontSize="xl"
+            fontSize="2xl"
             color="brand.100"
             fontWeight={
               pathname.substring(0, 6) == "/works" ? "bold" : "normal"
@@ -53,7 +53,7 @@ const NavMenu = () => {
         bg="none"
         aria-label="Hamburger menu"
         fontSize={40}
-        display={{ base: "flex", sm: "none" }}
+        display={{ base: "flex", md: "none" }}
         icon={<IoMenu />}
         color="brand.100"
         onClick={() => setDisplayMenu("flex")}
@@ -78,7 +78,7 @@ const NavMenu = () => {
             marginRight="16px"
             fontSize={40}
             color="brand.100"
-            display={{ base: "flex", sm: "none" }}
+            display={{ base: "flex", md: "none" }}
             icon={<IoClose />}
             onClick={() => setDisplayMenu("none")}
           />

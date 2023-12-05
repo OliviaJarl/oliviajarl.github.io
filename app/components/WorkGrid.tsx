@@ -5,7 +5,7 @@ import projects from "../data/projects";
 const WorkGrid = () => {
   return (
     <Box margin={{ base: 10, sm: 20 }}>
-      <Heading marginBottom="15px">Works</Heading>
+      <Heading marginBottom={{ base: "15px", md: "40px" }}>Works</Heading>
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3 }}
         spacing={8}

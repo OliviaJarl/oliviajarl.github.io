@@ -28,7 +28,12 @@ const DesignProcessElement = ({
             w={{ base: "100%", md: "40%" }}
             justify="center"
           >
-            <Box w="100%" justifyContent="center" display="flex">
+            <Box
+              w="100%"
+              justifyContent="center"
+              display="flex"
+              marginBottom={{ base: "10px", md: "0px" }}
+            >
               {images?.map((image) => (
                 <Image
                   key={image.charAt(image.length - 1)}

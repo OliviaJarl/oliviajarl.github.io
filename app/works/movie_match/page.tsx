@@ -20,13 +20,16 @@ export default function MovieMatch() {
       <Image
         src={movieMatch["poster_image"]}
         alt="MovieMatch poster image"
-        marginBottom={{ base: "20px", md: "50px" }}
+        marginBottom={{ base: "10px", md: "30px" }}
       />
       <Flex
         marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
         marginRight={{ base: "30px", md: "40px", xl: "270px" }}
         flexDir="column"
       >
+        <Heading size="2xl" marginBottom={"10px"} textAlign="center">
+          {movieMatch["title"]}
+        </Heading>
         <Flex marginBottom={bottomMargin} flexDir="column">
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
