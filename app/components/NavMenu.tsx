@@ -38,7 +38,9 @@ const NavMenu = () => {
           <Text
             fontSize="xl"
             color="brand.100"
-            fontWeight={pathname == "/works" ? "bold" : "normal"}
+            fontWeight={
+              pathname.substring(0, 6) == "/works" ? "bold" : "normal"
+            }
             _hover={{
               fontWeight: "bold",
             }}
@@ -98,7 +100,9 @@ const NavMenu = () => {
               color="brand.100"
               bg="none"
               fontSize="xl"
-              fontWeight={pathname == "/works" ? "bold" : "normal"}
+              fontWeight={
+                pathname.substring(0, 6) == "/works" ? "bold" : "normal"
+              }
               onClick={() => setDisplayMenu("none")}
             >
               Works

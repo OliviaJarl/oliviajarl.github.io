@@ -18,7 +18,7 @@ const Details = ({ projectTime, role, challenge }: Props) => {
     <Center marginBottom={{ base: "10px", md: "40px" }}>
       <TableContainer w={{ base: "100%", md: "95%" }}>
         <Table variant="simple" size="md">
-          <Tbody whiteSpace="pre" fontSize={{ base: "xs", md: "lg", lg: "xl" }}>
+          <Tbody whiteSpace="pre" fontSize={{ base: "xs", md: "lg" }}>
             <Tr>
               <Td fontWeight="bold" verticalAlign="top">
                 Challenge

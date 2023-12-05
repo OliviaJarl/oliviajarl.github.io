@@ -5,7 +5,8 @@ const zooloData = {
         {
         role:"In this projects we did everything together.",
         challenge:"Current tool storage solutions are not adapted to the children´s physical and cognitive skills, nor do they increase motivationwhen cleaning up.",
-        projectTime:"18 weeks"}
+        projectTime:"18 weeks, half time"
+    }
     ,
     results: "We created a storage solution called Zoolo that is inspired by suitcases. The preschool staff can easily drag it in and out of a storage shed, and the adjustable handle enables an ergonomic work position. The children fetch the toys from the opening in the bottom, and to make the pick-up funnier, the children put the toys in the top opening, which is shaped like a mouth. Zoolo needs to be stable since there is a risk that children climb on it. Therefore, the wheels are slightly tilted, and the handle is an extra stabilizer. The rims of the wheels are closed to prevent pinch point hazards.",
     process_overview: [

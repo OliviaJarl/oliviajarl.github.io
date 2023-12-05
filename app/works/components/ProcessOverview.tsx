@@ -10,7 +10,7 @@ const ProcessOverview = ({ image, title }: Props) => {
       <Image
         src={image}
         alt="Process overview"
-        marginBottom={{ base: "20px", md: "50px" }}
+        marginBottom={{ base: "10px", md: "25px" }}
       />
       <Text>{title}</Text>
     </VStack>

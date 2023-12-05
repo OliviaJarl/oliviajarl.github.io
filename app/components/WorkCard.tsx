@@ -10,6 +10,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface Props {
   name: string;
@@ -20,7 +21,12 @@ interface Props {
 
 const WorkCard = ({ name, image, description, url }: Props) => {
   return (
-    <Card borderRadius={10} overflow="hidden">
+    <Card
+      borderRadius={10}
+      overflow="hidden"
+      as={motion.div}
+      whileHover={{ scale: 1.05 }}
+    >
       <Image alt={"Thumbnail for the project " + name} src={image} />
       <CardBody>
         <Heading size={{ base: "xs", sm: "md" }}>{name}</Heading>

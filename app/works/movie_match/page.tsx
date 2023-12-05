@@ -1,9 +1,105 @@
-import { Center } from "@chakra-ui/react";
+import {
+  Center,
+  Image,
+  Heading,
+  Flex,
+  Text,
+  SimpleGrid,
+} from "@chakra-ui/react";
+import ProcessOverview from "../components/ProcessOverview";
+import Details from "../components/Details";
+import Reflection from "../components/Reflection";
+import movieMatch from "@/app/data/movie_match";
+import DesignProcessElement from "../components/DesignProcessElement";
 
 export default function MovieMatch() {
+  const bottomMargin = { base: "10px", md: "40px" };
+  const bottomMarginHeading = { base: "10px", md: "25px" };
   return (
-    <Center>
-      <p>This page is under construction.</p>
-    </Center>
+    <>
+      <Image
+        src={movieMatch["poster_image"]}
+        alt="MovieMatch poster image"
+        marginBottom={{ base: "20px", md: "50px" }}
+      />
+      <Flex
+        marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
+        marginRight={{ base: "30px", md: "40px", xl: "270px" }}
+        flexDir="column"
+      >
+        <Flex marginBottom={bottomMargin} flexDir="column">
+          <Heading size="lg" marginBottom={bottomMarginHeading}>
+            About the project
+          </Heading>
+          <Text>{movieMatch["about"]}</Text>
+        </Flex>
+        <Details
+          role={movieMatch["details"]["role"]}
+          challenge={movieMatch["details"]["challenge"]}
+          projectTime={movieMatch["details"]["projectTime"]}
+        />
+        <Heading marginBottom={bottomMarginHeading} size="lg">
+          Process overview
+        </Heading>
+        <SimpleGrid
+          columns={{ sm: 1, md: 3 }}
+          spacing={4}
+          justifyContent="center"
+          marginBottom={bottomMargin}
+        >
+          {movieMatch["process_overview"].map((process) => (
+            <ProcessOverview
+              key={process.id}
+              title={process.title}
+              image={process.image}
+            />
+          ))}
+        </SimpleGrid>
+        <Heading size="lg" marginBottom={bottomMarginHeading}>
+          Process
+        </Heading>
+        {movieMatch["design_process"].map((step) => (
+          <DesignProcessElement
+            key={step.id}
+            title={step.title}
+            description={step.description}
+            images={step.images}
+          />
+        ))}
+        <Heading size="lg" marginBottom={bottomMarginHeading}>
+          Result
+        </Heading>
+        <Text marginBottom={{ base: "10px", md: "25px" }}>
+          {movieMatch["results"][0]}
+        </Text>
+        <Text marginBottom={bottomMargin}>{movieMatch["results"][1]}</Text>
+        <SimpleGrid
+          columns={{ sm: 1, md: 2 }}
+          spacingY={{ base: "10px", md: "40px" }}
+          spacingX={{ base: "10px", md: "100px" }}
+          margin="auto"
+          marginBottom={bottomMargin}
+        >
+          <Center w="fit-content">
+            <Image src="/movie_match/result_1.svg" alt="Result 1" />
+          </Center>
+          <Center w="fit-content">
+            <Image src="/movie_match/result_2.svg" alt="Result 2" />
+          </Center>
+          <Center w="fit-content">
+            <Image src="/movie_match/result_3.svg" alt="Result 3" />
+          </Center>
+          <Center w="fit-content">
+            <Image src="/movie_match/result_4.svg" alt="Result 4" />
+          </Center>
+          <Center w="fit-content">
+            <Image src="/movie_match/result_5.svg" alt="Result 5" />
+          </Center>
+          <Center w="fit-content">
+            <Image src="/movie_match/result_6.svg" alt="Result 6" />
+          </Center>
+        </SimpleGrid>
+      </Flex>
+    </>
   );
 }

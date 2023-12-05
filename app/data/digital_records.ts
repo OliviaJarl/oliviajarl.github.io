@@ -5,7 +5,7 @@ const digitalRecords = {
         {
         role:"Planning the design process, UI design, exhibition poster.",
         challenge:"Many fields in the paper journal are regularly skipped or missed, and thus, the journal cannot provide adequate information about a patient’s health.",
-        projectTime:"18 weeks"
+        projectTime:"18 weeks, half time"
     },
     results: "We designed and implemented a portable, digital medical record that is used on tablets. The digital medical record includes all data fields that the original paper journal had and some new functionalities to facilitate the workflow. These functionalities are a quick switch between different patients’ records, warnings if a user skips a compulsory field and a summary view of a patient’s record. The data fields are distributed between several pages, which increases the visual clarity and decreases the users’ mental workload when not all information is presented simultaneously. The user is free to fill out the fields in the order suitable for each patient meeting.",
     process_overview: [
@@ -27,7 +27,7 @@ const digitalRecords = {
         {
         id: "4",
         title: "Prototype", 
-        image:  "/prototype.svg",
+        image:  "/prototype_digital.svg",
         },
         {
         id: "5",
@@ -65,7 +65,7 @@ const digitalRecords = {
         id: "5",
         title: "Evaluate", 
         description: "We could evaluate ideas frequently since we had continuous contact with the users. The project ended with a final evaluation of the design. In this evaluation, the users performed predefined tasks using the Figma prototype. The execution of the tasks was followed by an interview of the users’ experience, and they were also asked to fill out a semantic differential scale. The design was well received by the healthcare staff, who were optimistic about the digitisation of the paper journal. Most of the identified problems were related to new functionalities and concepts that did not exist in the paper journal.",
-        images: ["/digital_records/evaluate.png"]
+        images: ["/digital_records/semantic.svg"]
         },
     ],
     reflections: [
