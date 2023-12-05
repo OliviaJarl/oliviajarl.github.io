@@ -22,7 +22,7 @@ export default function Zoolo() {
           src={digitalRecords["poster_image"]}
           alt="Digital records image"
           w={{ base: "100vw", lg: "70vw" }}
-          marginBottom={{ base: "20px", md: "50px" }}
+          marginBottom={{ base: "20px", md: "35px" }}
         />
       </Center>
 
@@ -31,6 +31,13 @@ export default function Zoolo() {
         marginRight={{ base: "30px", md: "40px", xl: "270px" }}
         flexDir="column"
       >
+        <Heading
+          size="2xl"
+          marginBottom={{ base: "10px", md: "25px" }}
+          textAlign="center"
+        >
+          {digitalRecords["title"]}
+        </Heading>
         <Flex marginBottom={bottomMargin} flexDir="column">
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project

@@ -1,6 +1,7 @@
 const zooloData = {
+    title: "Zoolo",
     about: "This was a group project that ran over two courses during my bachelor’s in industrial design engineering. In the first course, we were supposed to decide on a subject to study, and we chose outdoor storage solutions for toys in preschools. The study included interviews with preschool staff, observations of the usage of existing solutions and literature studies on children’s cognitive and motor development. We categorised and analysed the gathered data, and the results were used in the second course to support the development of a new storage solution. During this process, we worked iteratively with our ideas and performed user evaluations to understand how our ideas met the user’s needs.",
-    poster_image: "/zoolo/poster_image.svg",
+    poster_image: "/zoolo/poster_image.png",
     details: 
         {
         role:"In this projects we did everything together.",
