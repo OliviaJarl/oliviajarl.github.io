@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 //import { Inter } from "next/font/google";
+import { ColorModeScript } from "@chakra-ui/react";
+import theme from "./theme";
 import "./globals.css";
 import { Footer } from "./layout/footer";
 import { Header } from "./layout/header";
@@ -36,6 +38,7 @@ export default function RootLayout({
 
           <Footer />
         </Providers>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       </body>
     </html>
   );

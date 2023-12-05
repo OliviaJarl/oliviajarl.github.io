@@ -21,7 +21,8 @@ const WorkSection = ({ name, image, description, url, id }: Props) => {
   return (
     <Flex
       justifyContent="center"
-      margin={10}
+      marginLeft={10}
+      marginRight={10}
       flexDirection={{ base: "column", lg: "row" }}
     >
       <Image

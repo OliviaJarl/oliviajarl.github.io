@@ -7,7 +7,7 @@ const WorkGrid = () => {
     <Box margin={{ base: 10, sm: 20 }}>
       <Heading marginBottom="15px">Works</Heading>
       <SimpleGrid
-        columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
+        columns={{ sm: 1, md: 2, lg: 3 }}
         spacing={8}
         justifyContent="center"
       >

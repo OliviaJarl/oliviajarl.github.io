@@ -6,12 +6,12 @@ import NavMenu from "../components/NavMenu";
 export function Header() {
   return (
     <header>
-      <Flex justifyContent="space-between" padding={{ base: 4, sm: 8 }}>
+      <Flex justifyContent="space-between" padding={{ base: 4, md: 5 }}>
         <Link href={"/"}>
           <div>
             <Image
               src="/header_image.svg"
-              alt="Header image"
+              alt="Logo image"
               align="center"
               boxSize={{ base: "40px", sm: "50px" }}
             />
