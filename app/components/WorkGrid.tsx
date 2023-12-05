@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, ScaleFade } from "@chakra-ui/react";
 import WorkCard from "./WorkCard";
 import projects from "../data/projects";
 

@@ -6,7 +6,6 @@ import {
   HStack,
   Image,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
 

@@ -9,6 +9,7 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
+import { transform } from "next/dist/build/swc";
 import Link from "next/link";
 
 interface Props {
