@@ -30,7 +30,7 @@ const WorkSection = ({ name, image, description, url, id }: Props) => {
         marginLeft={{ base: "0px", lg: id % 2 == 0 ? "0px" : "30px" }}
         marginRight={{ base: "0px", lg: id % 2 == 0 ? "30px" : "0px" }}
         marginTop={{ base: "10px", lg: "0px" }}
-        order={{ base: 1, md: id % 2 == 0 ? 1 : 2 }}
+        order={{ base: 2, md: id % 2 == 0 ? 1 : 2 }}
       >
         <Heading marginBottom="5px">{name}</Heading>
         <Text>{description}</Text>
