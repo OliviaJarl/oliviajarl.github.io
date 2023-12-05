@@ -17,23 +17,22 @@ interface Props {
   id: number;
 }
 const WorkSection = ({ name, image, description, url, id }: Props) => {
+  const marginEdge = "30px";
   return (
     <Flex
       justifyContent="center"
-      marginLeft={10}
-      marginRight={10}
+      marginLeft={marginEdge}
+      marginRight={marginEdge}
+      marginTop="15px"
       flexDirection={{ base: "column", lg: "row" }}
     >
-      <Image
-        w={{ base: "100%", lg: "60%" }}
-        alt={"Thumbnail for the project " + name}
-        src={image}
-      />
       <Box
-        marginLeft={{ base: "0px", lg: "10px" }}
+        marginLeft={{ base: "0px", lg: id % 2 == 0 ? "0px" : "30px" }}
+        marginRight={{ base: "0px", lg: id % 2 == 0 ? "30px" : "0px" }}
         marginTop={{ base: "10px", lg: "0px" }}
+        order={{ base: 1, md: id % 2 == 0 ? 1 : 2 }}
       >
-        <Heading>{name}</Heading>
+        <Heading marginBottom="5px">{name}</Heading>
         <Text>{description}</Text>
         <Flex justifyContent="flex-end">
           <Link href={url}>
@@ -41,6 +40,12 @@ const WorkSection = ({ name, image, description, url, id }: Props) => {
           </Link>
         </Flex>
       </Box>
+      <Image
+        w={{ base: "100%", lg: "50%" }}
+        alt={"Thumbnail for the project " + name}
+        src={image}
+        order={{ base: 1, md: id % 2 == 0 ? 2 : 1 }}
+      />
     </Flex>
   );
 };
