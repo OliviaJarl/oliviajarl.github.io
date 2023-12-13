@@ -7,8 +7,8 @@ import Skills from "./Skills";
 const ResumeGrid = () => {
   return (
     <Box
-      marginLeft={{ base: "10px", md: "60px" }}
-      marginRight={{ base: "10px", md: "60px" }}
+      marginLeft={{ base: "10px", md: "60px", lg: "70px" }}
+      marginRight={{ base: "10px", md: "60px", lg: "70px" }}
     >
       <Heading
         size="lg"

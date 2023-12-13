@@ -1,5 +1,6 @@
 "use client";
 import WorkSection from "./components/WorkSection";
+import WorkSectionCard from "./components/WorkSectionCard";
 import projects from "../data/projects";
 
 export default function Works() {

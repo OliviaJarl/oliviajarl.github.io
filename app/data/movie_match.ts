@@ -2,7 +2,6 @@ const movieMatch = {
     title: "MovieMatch",
     about: "MovieMatch was a group project where we designed and implemented a mobile application on the theme of collaborative interaction. After some brainstorming, we decided to work with an application that assists a group of people in selecting a movie. We made a prototype in Figma, which was used to perform evaluations with users. The application was implemented with the software development kit Flutter and written in Dart. We connected the application to The Movie Database’s API to get movie data and used Firebase to authenticate users and store user-related data.",
     poster_image: "/movie_match/poster_image.svg",
-    poster_image_small: "/movie_match/poster_image_small.svg",
     details: 
         {
         role:"Responsible for Firebase and the logic in the application",

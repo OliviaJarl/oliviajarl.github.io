@@ -1,2 +1,0 @@
-const oliviaDescription = "Hi, I am Olivia! I study engineering at Chalmers University of Technology, and I am currently doing my last year in the master’s program Interaction design and Technologies. I have a BSE in Industrial design engineering, and thus, I have experience in design both digital and physical products. Besides user-centred design, I have an interest in front-end development and I am enthusiastic to improve my coding skills. Feel free to contact me on LinkedIn or email.";
-export default oliviaDescription;

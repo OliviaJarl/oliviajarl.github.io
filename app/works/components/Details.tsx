@@ -1,13 +1,5 @@
-import {
-  TableContainer,
-  Table,
-  Tbody,
-  Tr,
-  Td,
-  VStack,
-  Flex,
-  Center,
-} from "@chakra-ui/react";
+import { TableContainer, Table, Tbody, Tr, Td, Center } from "@chakra-ui/react";
+
 interface Props {
   projectTime: string;
   role: string;

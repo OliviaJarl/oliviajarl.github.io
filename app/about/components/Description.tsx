@@ -22,18 +22,17 @@ const Description = () => {
         >
           <Text>Hi, I am Olivia!</Text>
           <Text>
-            I study engineering at Chalmers University of Technology and am
-            currently doing my last year in the master’s program Interaction
-            Design and Technologies. I have a BSE in Industrial design
-            engineering, and thus, I have experience designing both digital and
-            physical products.
+            I study Industrial design engineering at Chalmers University of
+            Technology and am currently doing my last year in the master’s
+            programme Interaction Design and Technologies. Due to the
+            combination of my bachelor’s and master’s programmes, I have
+            experience designing both digital and physical products.
           </Text>
           <Text>
             Among the most important things I have taken away from my education
             is the user-centred design process, and I think it is exciting to
             get into the users’ perspective. Besides user-centred design, I am
-            interested in front-end development and am enthusiastic to improve
-            my coding skills.
+            interested in front-end development, which I do in my spare time.
           </Text>
           <Text>
             Feel free to contact me on{" "}
