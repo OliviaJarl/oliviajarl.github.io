@@ -16,8 +16,14 @@ const theme = extendTheme({ config,
   },
   colors: {
     brand: {
-      100: "#283141",
+      100: "#2D384C",
       200: "#4d6082",
+    },
+    buttons: {
+      100: "#3F988E",
+      200: "#FFFFFF",
+      300: "#1B6D64",
+      400: "#14554E",
     },
   },
   components: {
@@ -32,7 +38,7 @@ const theme = extendTheme({ config,
     },
     Heading: {
       baseStyle: {
-        color: "#323F56"
+        color: "#2D384C"
       },
     },
     Button: {

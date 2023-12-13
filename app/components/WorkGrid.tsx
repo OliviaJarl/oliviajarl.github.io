@@ -15,7 +15,7 @@ const WorkGrid = () => {
   };
 
   return (
-    <Box margin={{ base: 10, sm: 20 }}>
+    <Box margin={{ base: "10px", sm: "20px", md: "50px", lg: "80px" }}>
       <Heading marginBottom={{ base: "15px", md: "40px" }}>Works</Heading>
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3 }}
@@ -34,6 +34,7 @@ const WorkGrid = () => {
             description={project.description}
             image={project.image}
             url={project.url}
+            tags={project.tags}
           />
         ))}
       </SimpleGrid>
