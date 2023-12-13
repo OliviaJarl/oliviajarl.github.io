@@ -1,8 +1,29 @@
-import { Flex, Image, Center, Box, Text } from "@chakra-ui/react";
+import { Flex, Image, Box, Text, Fade, keyframes } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Introduction = () => {
   const [display, setDisplay] = useState("none");
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 2,
+      },
+    },
+  };
+  const item = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+      },
+    },
+  };
+
   return (
     <>
       <Flex
@@ -11,8 +32,16 @@ const Introduction = () => {
         marginLeft={{ base: "20px", sm: "40px", lg: "100px" }}
         marginRight={{ base: "20px", sm: "40px", lg: "100px" }}
         marginTop={{ base: "10px", sm: "20px", lg: "40px" }}
+        as={motion.div}
+        variants={container}
+        initial="hidden"
+        animate="show"
       >
-        <Box marginRight={{ base: "0px", md: "10px" }}>
+        <Box
+          marginRight={{ base: "0px", md: "10px" }}
+          as={motion.div}
+          variants={item}
+        >
           <Text
             fontSize={{ base: "lg", sm: "2xl", md: "4xl" }}
             align={{ base: "center", md: "left" }}
@@ -34,13 +63,16 @@ const Introduction = () => {
           marginTop={{ base: "15px", md: "0px" }}
           onMouseEnter={() => setDisplay("flex")}
           onMouseLeave={() => setDisplay("none")}
+          as={motion.div}
+          variants={item}
         >
           <Image
             src="/linkedinken1.jpg"
             alt="Profile image"
-            borderRadius={200}
+            borderRadius={300}
             zIndex={1}
           />
+
           <Image
             src="/sunglasses.svg"
             alt="Sunglasses on hover"

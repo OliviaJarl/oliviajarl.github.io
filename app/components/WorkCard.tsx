@@ -20,12 +20,23 @@ interface Props {
 }
 
 const WorkCard = ({ name, image, description, url }: Props) => {
+  const item = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 1.3,
+      },
+    },
+  };
+
   return (
     <Card
       borderRadius={10}
       overflow="hidden"
       as={motion.div}
       whileHover={{ scale: 1.05 }}
+      variants={item}
     >
       <Image alt={"Thumbnail for the project " + name} src={image} />
       <CardBody>
