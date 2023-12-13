@@ -1,5 +1,4 @@
 import { Image, Flex, Text, Link, Center, VStack } from "@chakra-ui/react";
-import oliviaDescription from "@/app/data/description";
 const Description = () => {
   return (
     <Center
