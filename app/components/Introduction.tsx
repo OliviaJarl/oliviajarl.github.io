@@ -10,7 +10,7 @@ const Introduction = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 2,
+        staggerChildren: 1.4,
       },
     },
   };

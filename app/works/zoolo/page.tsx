@@ -1,3 +1,4 @@
+
 import { Image, Heading, Flex, Text, SimpleGrid } from "@chakra-ui/react";
 import ProcessOverview from "../components/ProcessOverview";
 import Details from "../components/Details";
@@ -43,6 +44,7 @@ export default function Zoolo() {
           spacing={4}
           justifyContent="center"
           marginBottom={bottomMargin}
+  
         >
           {zooloData["process_overview"].map((process) => (
             <ProcessOverview
