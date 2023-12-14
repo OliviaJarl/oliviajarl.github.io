@@ -59,7 +59,7 @@ const WorkCard = ({ name, image, description, url, tags }: Props) => {
             <Tag
               key={tag.id}
               marginLeft="10px"
-              size={{ base: "sm", sm: "md", lg: "lg" }}
+              size={{ base: "md", md: "lg" }}
               color={tag.colorTitle}
               bg={tag.colorBackground}
               borderRadius="30px"
