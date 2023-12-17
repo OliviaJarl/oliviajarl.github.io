@@ -14,8 +14,8 @@ const projects = [{
             {
             id: 2,
             title: "Industrial design",
-            colorBackground: "#FFFAE2",
-            colorTitle: "#A17A14"
+            colorBackground: "#C9DAF4",
+            colorTitle: "#2D5DA6"
             }, 
         ],
     id: 1,
@@ -41,6 +41,27 @@ const projects = [{
         }, 
     ],
     id: 2,
+},
+{
+    name: "Resource booking site",
+    image: "/booking_site/thumbnail.png",
+    description: "In this project, I designed a graphic user interface for a room and equipment booking system.",
+    url: "/works/booking_site",
+    tags: [
+        {
+        id: 1,
+        title: "Figma",
+        colorBackground: "#DBF2FF",
+        colorTitle: "#416275"
+        },
+        {
+        id: 2,
+        title: "UI design",
+        colorBackground: "#E9E5FF",
+        colorTitle: "#6256A3",
+        }, 
+    ],
+    id: 4,
 },
 {
     name: "MovieMatch",

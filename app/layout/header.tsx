@@ -5,7 +5,10 @@ import NavMenu from "../components/NavMenu";
 export function Header() {
   return (
     <header>
-      <Flex justifyContent="space-between" padding={{ base: 4, md: 5 }}>
+      <Flex
+        justifyContent="space-between"
+        padding={{ base: "15px", md: "25px" }}
+      >
         <Link href={"/"}>
           <div>
             <Image
