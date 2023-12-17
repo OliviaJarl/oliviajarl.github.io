@@ -1,6 +1,5 @@
 import {
-  Image,
-  Button,
+  Box,
   Card,
   CardBody,
   CardFooter,
@@ -8,6 +7,7 @@ import {
   Tag,
   Text,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -23,10 +23,11 @@ interface Props {
   image: string;
   description: string;
   url: string;
+  gradient: string,
   tags: Tag[];
 }
 
-const WorkCard = ({ name, image, description, url, tags }: Props) => {
+const WorkCard = ({ name, image, description, url, gradient, tags }: Props) => {
   const item = {
     hidden: { opacity: 0 },
     show: {
@@ -47,7 +48,15 @@ const WorkCard = ({ name, image, description, url, tags }: Props) => {
         whileHover={{ scale: 1.05 }}
         variants={item}
       >
-        <Image alt={"Thumbnail for the project " + name} src={image} />
+        <Box className={gradient}>
+          <Image
+            alt={"Thumbnail for the project " + name}
+            src={image}
+            height={400}
+            width={600}
+          />
+        </Box>
+
         <CardBody>
           <Heading size={{ base: "xs", sm: "md" }}>{name}</Heading>
           <Text marginTop={2} fontSize={{ base: "xs", sm: "md" }}>

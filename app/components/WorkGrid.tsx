@@ -34,6 +34,7 @@ const WorkGrid = () => {
             description={project.description}
             image={project.image}
             url={project.url}
+            gradient={project.gradient}
             tags={project.tags}
           />
         ))}

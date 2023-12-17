@@ -1,4 +1,4 @@
-import { Flex, Image, Box, Text, Fade, keyframes } from "@chakra-ui/react";
+import { Flex, Image, Box, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
