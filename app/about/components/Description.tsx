@@ -2,16 +2,19 @@ import { Image, Flex, Text, Link, Center, VStack } from "@chakra-ui/react";
 const Description = () => {
   return (
     <Center
-      marginLeft={{ base: "10px", sm: "10px", lg: "120px" }}
-      marginRight={{ base: "10px", sm: "10px", lg: "120px" }}
-      marginBottom={{ base: "10px", md: "60px" }}
+      marginLeft={{ base: "15px", md: "25px", lg: "120px" }}
+      marginRight={{ base: "15px", md: "25px", lg: "120px" }}
+      marginBottom={{ base: "15px", md: "60px" }}
       marginTop={{ base: "10px", md: "50px" }}
     >
       <Flex flexDir={{ base: "column", md: "row" }} alignItems="center">
         <Image
-          alt={"Profile picture"}
-          src="/linkedinken1.jpg"
+          alt="Profile picture"
+          src="/profile_picture500.jpg"
+          srcSet="/profile_picture1500.jpg 1500w, /profile_picture1000.jpg 1000w, /profile_picture500.jpg 500w"
+          aspectRatio="auto"
           boxSize={{ base: 200, md: 350, lg: 400 }}
+          marginBottom={{ base: "15px", md: "25px" }}
           borderRadius={200}
         />
         <VStack

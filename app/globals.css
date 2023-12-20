@@ -10,13 +10,14 @@ html {
 .gradient1 {
 background-image: linear-gradient(
     45deg,
-    #C5BCFF,
-    #E9D3FD,
-    #F0E9C9,
-    #7FAAEF
+    #FFD4E2,
+    #d2b5f3,
+    #adc8f3,
+    #E1EDFF
+
     );
-background-size: 300%;
-animation: bg-animation 10s infinite alternate;
+background-size: 250%;
+animation: bg-animation 20s infinite alternate;
 }
 
 .gradient2 {
@@ -26,7 +27,7 @@ animation: bg-animation 10s infinite alternate;
         #E1CCE3,
         #C2E0E2, 
         #DAF4DC,
-        #FFFFFF
+        #EEFFEF
     );
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;
@@ -36,7 +37,8 @@ animation: bg-animation 10s infinite alternate;
         45deg,
         #ECB9BF,
         #F0E9C9,
-        #73ACC2
+        #73ACC2,
+        #E2F7FF
     );
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;
@@ -45,9 +47,9 @@ animation: bg-animation 10s infinite alternate;
 .gradient4 {
     background-image: linear-gradient(
         45deg,
-        #9796f0,
         #fbc7d4,
-        #FFFFFF
+        #9796f0,
+        #E6E5FF
     );
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;

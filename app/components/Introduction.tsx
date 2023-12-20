@@ -67,7 +67,9 @@ const Introduction = () => {
           variants={item}
         >
           <Image
-            src="/linkedinken1.jpg"
+            src="/profile_picture500.jpg"
+            srcSet="/profile_picture1500.jpg 1500w, /profile_picture1000.jpg 1000w, /profile_picture500.jpg 500w"
+            aspectRatio="auto"
             alt="Profile image"
             borderRadius={300}
             zIndex={1}

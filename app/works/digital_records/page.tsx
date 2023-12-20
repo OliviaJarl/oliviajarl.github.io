@@ -21,6 +21,7 @@ export default function Zoolo() {
         <Image
           src={digitalRecords["poster_image"]}
           alt="Digital records image"
+          aspectRatio="auto"
           w={{ base: "100vw", lg: "70vw" }}
           marginBottom={{ base: "20px", md: "35px" }}
         />

@@ -1,7 +1,8 @@
 const bookingSite = {
     title: "Resource booking site",
     about: "",
-    poster_image: "/booking_site/poster_image.png",
+    posterSrcSet: "/booking_site/poster_image500.png 500w, /booking_site/poster_image1000.png 1000w, /booking_site/poster_image1500.png 1500w",
+    poster_image_small: "/booking_site/poster_image500.png",
     details: 
         {
         role:"I did everything since it was an individual project.",

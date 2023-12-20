@@ -20,6 +20,7 @@ export default function MovieMatch() {
       <Image
         src={movieMatch["poster_image"]}
         alt="MovieMatch poster image"
+        aspectRatio="auto"
         marginBottom={{ base: "10px", md: "30px" }}
       />
       <Flex

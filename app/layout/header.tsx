@@ -1,4 +1,4 @@
-import { HStack, Image, Flex, Text } from "@chakra-ui/react";
+import { Image, Flex } from "@chakra-ui/react";
 import Link from "next/link";
 import NavMenu from "../components/NavMenu";
 
@@ -12,7 +12,7 @@ export function Header() {
         <Link href={"/"}>
           <div>
             <Image
-              src="/header_image.svg"
+              src={"/header_image.svg"}
               alt="Logo image"
               align="center"
               boxSize={{ base: "40px", sm: "50px" }}

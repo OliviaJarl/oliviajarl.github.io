@@ -20,8 +20,10 @@ export default function Booking() {
     <>
       <Center>
         <Image
-          src={bookingSite["poster_image"]}
-          alt="Digital records image"
+          src={bookingSite["poster_image_small"]}
+          alt="Booking poster image"
+          srcSet={bookingSite["posterSrcSet"]}
+          aspectRatio="auto"
           w={{ base: "100vw", lg: "70vw" }}
           marginBottom={{ base: "20px", md: "35px" }}
         />

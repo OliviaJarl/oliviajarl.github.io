@@ -4,10 +4,10 @@ import {
   CardBody,
   CardFooter,
   Heading,
+  Image,
   Tag,
   Text,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -23,7 +23,7 @@ interface Props {
   image: string;
   description: string;
   url: string;
-  gradient: string,
+  gradient: string;
   tags: Tag[];
 }
 
@@ -52,8 +52,7 @@ const WorkCard = ({ name, image, description, url, gradient, tags }: Props) => {
           <Image
             alt={"Thumbnail for the project " + name}
             src={image}
-            height={400}
-            width={600}
+            aspectRatio="auto"
           />
         </Box>
 
