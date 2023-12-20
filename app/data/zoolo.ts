@@ -37,7 +37,6 @@ const zooloData = {
         title: "Prototype", 
         image:  "/prototype.svg",
         },
-        
     ],
     design_process: [
         {
@@ -56,19 +55,19 @@ const zooloData = {
         id: "3",
         title: "Ideate", 
         description: "Before the ideation started, we narrowed the problem statement to smaller toys. Therefore, the user studies were supplemented with a more extensive study of existing storage solutions for smaller toys on the market. We also created user personas of primary users of three different ages to make it easier to relate to the users. To ideate, we used a combination of the methods of braindrawing and brainwriting and the method of morphological matrix.",
-        images: ["/zoolo/ideate_1.jpg"]
+        images: ["/zoolo/ideate.jpg"]
         },
         {
         id: "4",
         title: "Evaluate", 
         description: "The ideas were evaluated continuously to find the most suitable solution. We began with an elimination matrix to filter out the ideas that did not fulfil the requirements. To filter further, we asked preschool personnel to fill out a survey with questions about the ideas. The data from the survey supported the execution of a Pugh method, which resulted in three remaining concepts. We further developed these concepts and had users evaluate them to help us select the best one.",
-        images: ["/zoolo/evaluate_1.svg"]
+        images: ["/zoolo/evaluate.png"]
         },
         {
         id: "5",
         title: "Prototype", 
         description: "To explore appropriate dimensions, we made a cardboard prototype of the winning concept at a scale of 1:1. The toy markings were inspired by pictures used in augmentative and alternative communication to consider the younger children's cognitive ability. The final design was visualised by a 3D model we made in Autodesk Alias.",
-        images: ["/zoolo/prototype_1.jpg"]
+        images: ["/zoolo/prototype.jpg"]
         },
     ],
     reflections: [

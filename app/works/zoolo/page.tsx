@@ -69,7 +69,12 @@ export default function Zoolo() {
           Result
         </Heading>
         <Text marginBottom={bottomMargin}>{zooloData["results"]}</Text>
-        <Image src="/zoolo/result1.jpg" alt="Zoolo result 1" />
+        <Image
+          src="/zoolo/result1_500.jpg"
+          srcSet="/zoolo/result1_500.jpg 500w, /zoolo/result1_1000.jpg 1000w, /zoolo/result1_1300.jpg 1300w"
+          alt="Zoolo result 1"
+          aspectRatio="auto"
+        />
         <Flex
           flexDir={{ base: "column", md: "row" }}
           marginBottom={bottomMargin}
@@ -77,12 +82,14 @@ export default function Zoolo() {
           <Image
             src="/zoolo/result2.png"
             alt="Zoolo result 2"
-            w={{ md: "58%" }}
+            w={{ md: "55%" }}
+            aspectRatio="auto"
           />
           <Image
             src="/zoolo/result3.png"
             alt="Zoolo result 3"
-            w={{ md: "42%" }}
+            w={{ md: "45%" }}
+            aspectRatio="auto"
           />
         </Flex>
         <Heading size="lg" marginBottom={bottomMarginHeading}>

@@ -39,6 +39,7 @@ const DesignProcessElement = ({
                   key={image.charAt(image.length - 1)}
                   src={image}
                   alt={"Design process image " + image}
+                  aspectRatio="auto"
                 />
               ))}
             </Box>
