@@ -82,13 +82,13 @@ export default function Zoolo() {
           <Image
             src="/zoolo/result2.png"
             alt="Zoolo result 2"
-            w={{ md: "55%" }}
+            w={{ md: "52%" }}
             aspectRatio="auto"
           />
           <Image
             src="/zoolo/result3.png"
             alt="Zoolo result 3"
-            w={{ md: "45%" }}
+            w={{ md: "48%" }}
             aspectRatio="auto"
           />
         </Flex>
