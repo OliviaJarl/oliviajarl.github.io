@@ -26,7 +26,8 @@ const ResumeGrid = () => {
                   "work skills "`,
         }}
         gap="1"
-        columnGap="10"
+        columnGap={{ base: "10px", md: "50px" }}
+        rowGap={{ base: "15px", md: "30px" }}
         gridTemplateColumns={{ base: "1fr", md: "2fr 1fr" }}
       >
         <GridItem area={"skills"}>

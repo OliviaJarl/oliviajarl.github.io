@@ -3,7 +3,13 @@ import ResumeItem from "./ResumeItem";
 const Work = () => {
   return (
     <Flex flexDir="column">
-      <Heading size="md" color="brand.100" marginBottom={5}>
+      <Heading
+        size="md"
+        color="brand.100"
+        marginBottom={{ base: "10px", md: "20px" }}
+        borderBottom={{ base: "0px", md: "2px" }}
+        borderColor="#2D384C"
+      >
         Work experience
       </Heading>
       <ResumeItem
