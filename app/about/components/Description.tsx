@@ -4,22 +4,20 @@ const Description = () => {
     <Center
       marginLeft={{ base: "15px", md: "25px", lg: "120px" }}
       marginRight={{ base: "15px", md: "25px", lg: "120px" }}
-      marginBottom={{ base: "15px", md: "60px" }}
-      marginTop={{ base: "10px", md: "50px" }}
+      marginBottom={{ base: "15px", md: "30px" }}
+      marginTop={{ base: "10px", md: "30px" }}
     >
       <Flex flexDir={{ base: "column", md: "row" }} alignItems="center">
         <Image
-          alt="Profile picture"
-          src="/profile_picture500.jpg"
-          srcSet="/profile_picture1500.jpg 1500w, /profile_picture1000.jpg 1000w, /profile_picture500.jpg 500w"
+          alt="Illustration"
+          src="/illustration.svg"
           aspectRatio="auto"
-          boxSize={{ base: 200, md: 350, lg: 400 }}
+          boxSize={{ base: 200, md: 400, lg: 525 }}
           marginBottom={{ base: "15px", md: "25px" }}
-          borderRadius={200}
         />
         <VStack
           align="left"
-          marginLeft={{ base: "0px", md: "40px" }}
+          marginLeft={{ base: "0px", md: "50px" }}
           marginTop={{ base: "10px", md: "0px" }}
         >
           <Text>Hi, I am Olivia!</Text>

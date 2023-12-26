@@ -60,7 +60,7 @@ const WorkSectionCard = ({
           position="absolute"
           bg="rgba(255,255,255, 0.5)"
           backdropFilter="auto"
-          backdropBlur="15px"
+          backdropBlur="20px"
         >
           <Heading marginLeft="20px" marginRight="20px">
             {name}
