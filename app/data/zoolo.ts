@@ -19,7 +19,7 @@ const zooloData = {
         },
         {
         id: "2",
-        title: "Analyse data", 
+        title: "Analyse", 
         image:  "/analyse.svg",
         },
         {
@@ -47,7 +47,7 @@ const zooloData = {
         },
         {
         id: "2",
-        title: "Analyse data", 
+        title: "Analyse", 
         description: "We sorted the gathered data in an affinity diagram to identify problems and what caused the problem. The study results were the basis for a requirement list for developing a new storage solution. The requirement list was categorised into three main categories. The first category included more general requirements, such as what external factors it must handle and what functionality it must have, while the second and third categories included requirements regarding the users’ physical and cognitive abilities.",
         images: [""]
         },

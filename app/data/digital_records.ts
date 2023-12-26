@@ -18,7 +18,7 @@ const digitalRecords = {
         },
         {
         id: "2",
-        title: "Analyse data", 
+        title: "Analyse", 
         image:  "/analyse.svg",
         },
         {
@@ -47,7 +47,7 @@ const digitalRecords = {
         },
         {
         id: "2",
-        title: "Analyse data", 
+        title: "Analyse", 
         description: "All the gathered data was organised in an affinity diagram, giving us a clear view of the current situation. Many fields in the paper journal are regularly skipped or missed, partly because much information is communicated verbally instead. Some of the often skipped fields must be filled in by law. Therefore, the department managers expressed a wish that these would be mandatory to fill out in the application. We also saw that the paper journal is filled out dynamically instead of from top to bottom. It was also clear that the paper journal had different functionality depending on who was using it.",
         images: ["/digital_records/affinity.jpg"]
         },
