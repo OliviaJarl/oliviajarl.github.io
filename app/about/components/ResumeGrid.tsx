@@ -7,8 +7,8 @@ import Skills from "./Skills";
 const ResumeGrid = () => {
   return (
     <Box
-      marginLeft={{ base: "10px", md: "60px", lg: "70px" }}
-      marginRight={{ base: "10px", md: "60px", lg: "70px" }}
+      marginLeft={{ base: "15px", md: "60px", lg: "70px" }}
+      marginRight={{ base: "15px", md: "60px", lg: "70px" }}
     >
       <Heading
         size="lg"
@@ -26,7 +26,8 @@ const ResumeGrid = () => {
                   "work skills "`,
         }}
         gap="1"
-        columnGap="10"
+        columnGap={{ base: "10px", md: "50px" }}
+        rowGap={{ base: "15px", md: "30px" }}
         gridTemplateColumns={{ base: "1fr", md: "2fr 1fr" }}
       >
         <GridItem area={"skills"}>

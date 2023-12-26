@@ -21,11 +21,11 @@ export default function Zoolo() {
         <Image
           src={digitalRecords["poster_image"]}
           alt="Digital records image"
+          aspectRatio="auto"
           w={{ base: "100vw", lg: "70vw" }}
           marginBottom={{ base: "20px", md: "35px" }}
         />
       </Center>
-
       <Flex
         marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
         marginRight={{ base: "30px", md: "40px", xl: "270px" }}
@@ -87,26 +87,43 @@ export default function Zoolo() {
             marginBottom={{ base: "10px", md: "20px" }}
           >
             <Center>
-              <Image src="/digital_records/result_1.svg" alt="Result 1" />
+              <Image
+                src="/digital_records/result_1.svg"
+                alt="Result 1"
+                aspectRatio="auto"
+              />
             </Center>
             <Center>
-              <Image src="/digital_records/result_2.svg" alt="Result 2" />
+              <Image
+                src="/digital_records/result_2.svg"
+                alt="Result 2"
+                aspectRatio="auto"
+              />
             </Center>
             <Center>
-              <Image src="/digital_records/result_3.svg" alt="Result 3" />
+              <Image
+                src="/digital_records/result_3.svg"
+                alt="Result 3"
+                aspectRatio="auto"
+              />
             </Center>
             <Center>
-              <Image src="/digital_records/result_4.svg" alt="Result 4" />
+              <Image
+                src="/digital_records/result_4.svg"
+                alt="Result 4"
+                aspectRatio="auto"
+              />
             </Center>
           </SimpleGrid>
           <Image
-            src="/digital_records/poster.png"
+            src="/digital_records/project_poster500.png"
+            srcSet={digitalRecords["project_poster_src"]}
+            aspectRatio="auto"
             alt="Project poster"
             w={{ base: "100%", md: "60%" }}
             marginBottom={bottomMargin}
           />
         </VStack>
-
         <Heading size="lg" marginBottom={bottomMarginHeading}>
           Reflections
         </Heading>

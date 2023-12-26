@@ -1,57 +1,80 @@
-import {
-  Flex,
-  Image,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  Heading,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Image, Card, Heading, VStack, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface Props {
   name: string;
   image: string;
   description: string;
   url: string;
-  id: number;
+  gradient: string;
 }
 
-const WorkSectionCard = ({ name, image, description, url, id }: Props) => {
-  const marginEdge = "30px";
+const WorkSectionCard = ({
+  name,
+  image,
+  description,
+  url,
+  gradient,
+}: Props) => {
+  const [display, setDisplay] = useState("none");
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 1.3,
+      },
+    },
+  };
 
   return (
-    <Card
-      borderRadius={10}
-      overflow="hidden"
-      direction={{ base: "column", lg: "row" }}
-      as={motion.div}
-      whileHover={{ scale: 1.05 }}
-      marginLeft={marginEdge}
-      marginRight={marginEdge}
-    >
-      <Image
-        alt={"Thumbnail for the project " + name}
-        src={image}
-        h="500px"
-        objectFit="cover"
-      />
+    <Link href={url}>
+      <Card
+        borderRadius={20}
+        flexDirection="column"
+        overflow="hidden"
+        as={motion.div}
+        variants={item}
+        position="relative"
+        onMouseEnter={() => setDisplay("flex")}
+        onMouseLeave={() => setDisplay("none")}
+        className={gradient}
+      >
+        <Image
+          alt={"Thumbnail for the project " + name}
+          src={image}
+          h="500px"
+          objectFit="cover"
+          zIndex={1}
+        />
 
-      <CardBody flexDir={["row"]}>
-        <Flex flexDir={"column"}>
-          <Heading size={{ base: "xs", sm: "md" }}>{name}</Heading>
-          <Text marginTop={2} fontSize={{ base: "xs", sm: "md" }}>
+        <VStack
+          justifyContent="center"
+          display={display}
+          h="100%"
+          w="100%"
+          zIndex={2}
+          position="absolute"
+          bg="rgba(255,255,255, 0.5)"
+          backdropFilter="auto"
+          backdropBlur="20px"
+        >
+          <Heading marginLeft="20px" marginRight="20px">
+            {name}
+          </Heading>
+          <Text
+            marginLeft={{ base: "10px", md: "40px" }}
+            marginRight={{ base: "10px", md: "40px" }}
+            textAlign="center"
+          >
             {description}
           </Text>
-          <Link href={url}>
-            <Button size={{ base: "sm", sm: "md" }}>Read more</Button>
-          </Link>
-        </Flex>
-      </CardBody>
-    </Card>
+        </VStack>
+      </Card>
+    </Link>
   );
 };
 

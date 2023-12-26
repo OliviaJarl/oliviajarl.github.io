@@ -2,6 +2,7 @@ const digitalRecords = {
     title: "Portable, digital medical record",
     about: "I did this project as my bachelor’s thesis, and we made it in collaboration with the company Predicare and the psychiatric emergency department at Östra Sjukhuset. The group consisted of six members with backgrounds in Software Engineering, Industrial Design Engineering and Computer Science and Engineering. The psychiatric emergency department at Östra Sjukhuset uses a paper journal to handle patient meetings, and this journal includes Predicare’s product RETTS, which stands for Rapid Emergency Triage and Treatment System. RETTS helps healthcare workers assess patients’ need for healthcare. The project aimed to develop a digital version of the paper journal to help healthcare workers fill in all vital patient information. We made several design iterations during the project based on continuous user studies and evaluations. The design process resulted in an implementation of the application.",
     poster_image: "/digital_records/poster_image.svg",
+    project_poster_src: "/digital_records/project_poster500.png 500w, /digital_records/project_poster1000.png 1000w, /digital_records/project_poster1500.png 1500w",
     details: 
         {
         role:"Planning the design process, UI design, exhibition poster.",
@@ -17,7 +18,7 @@ const digitalRecords = {
         },
         {
         id: "2",
-        title: "Analyse data", 
+        title: "Analyse", 
         image:  "/analyse.svg",
         },
         {
@@ -46,7 +47,7 @@ const digitalRecords = {
         },
         {
         id: "2",
-        title: "Analyse data", 
+        title: "Analyse", 
         description: "All the gathered data was organised in an affinity diagram, giving us a clear view of the current situation. Many fields in the paper journal are regularly skipped or missed, partly because much information is communicated verbally instead. Some of the often skipped fields must be filled in by law. Therefore, the department managers expressed a wish that these would be mandatory to fill out in the application. We also saw that the paper journal is filled out dynamically instead of from top to bottom. It was also clear that the paper journal had different functionality depending on who was using it.",
         images: ["/digital_records/affinity.jpg"]
         },

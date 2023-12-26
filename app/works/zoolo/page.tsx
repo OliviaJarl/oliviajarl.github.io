@@ -1,4 +1,3 @@
-
 import { Image, Heading, Flex, Text, SimpleGrid } from "@chakra-ui/react";
 import ProcessOverview from "../components/ProcessOverview";
 import Details from "../components/Details";
@@ -13,9 +12,11 @@ export default function Zoolo() {
   return (
     <>
       <Image
-        src={zooloData["poster_image"]}
-        alt="Zoolo image"
-        marginBottom={{ base: "20px", md: "30px" }}
+        src={zooloData["poster_image_small"]}
+        alt="Zoolo poster image"
+        srcSet={zooloData["posterSrcSet"]}
+        aspectRatio="auto"
+        marginBottom={{ base: "10px", md: "30px" }}
       />
       <Heading size="2xl" marginBottom={"10px"} textAlign="center">
         {zooloData["title"]}
@@ -44,7 +45,6 @@ export default function Zoolo() {
           spacing={4}
           justifyContent="center"
           marginBottom={bottomMargin}
-  
         >
           {zooloData["process_overview"].map((process) => (
             <ProcessOverview
@@ -69,7 +69,12 @@ export default function Zoolo() {
           Result
         </Heading>
         <Text marginBottom={bottomMargin}>{zooloData["results"]}</Text>
-        <Image src="/zoolo/result1.jpg" alt="Zoolo result 1" />
+        <Image
+          src="/zoolo/result1_500.jpg"
+          srcSet="/zoolo/result1_500.jpg 500w, /zoolo/result1_1000.jpg 1000w, /zoolo/result1_1300.jpg 1300w"
+          alt="Zoolo result 1"
+          aspectRatio="auto"
+        />
         <Flex
           flexDir={{ base: "column", md: "row" }}
           marginBottom={bottomMargin}
@@ -77,12 +82,14 @@ export default function Zoolo() {
           <Image
             src="/zoolo/result2.png"
             alt="Zoolo result 2"
-            w={{ md: "58%" }}
+            w={{ md: "52%" }}
+            aspectRatio="auto"
           />
           <Image
             src="/zoolo/result3.png"
             alt="Zoolo result 3"
-            w={{ md: "42%" }}
+            w={{ md: "48%" }}
+            aspectRatio="auto"
           />
         </Flex>
         <Heading size="lg" marginBottom={bottomMarginHeading}>
