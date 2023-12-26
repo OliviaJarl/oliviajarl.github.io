@@ -1,14 +1,4 @@
-import {
-  Box,
-  Image,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  Heading,
-  VStack,
-  Text,
-} from "@chakra-ui/react";
+import { Image, Card, Heading, VStack, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -18,10 +8,16 @@ interface Props {
   image: string;
   description: string;
   url: string;
-  id: number;
+  gradient: string;
 }
 
-const WorkSectionCard = ({ name, image, description, url, id }: Props) => {
+const WorkSectionCard = ({
+  name,
+  image,
+  description,
+  url,
+  gradient,
+}: Props) => {
   const [display, setDisplay] = useState("none");
 
   const item = {
@@ -45,6 +41,7 @@ const WorkSectionCard = ({ name, image, description, url, id }: Props) => {
         position="relative"
         onMouseEnter={() => setDisplay("flex")}
         onMouseLeave={() => setDisplay("none")}
+        className={gradient}
       >
         <Image
           alt={"Thumbnail for the project " + name}

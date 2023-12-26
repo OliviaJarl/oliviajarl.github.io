@@ -17,17 +17,28 @@ interface Tag {
   colorBackground: string;
   colorTitle: string;
 }
+interface GradientBall {
+  id: number;
+  gradient: string;
+}
 
 interface Props {
   name: string;
   image: string;
   description: string;
   url: string;
-  gradient: string;
   tags: Tag[];
+  gradientBalls: GradientBall[];
 }
 
-const WorkCard = ({ name, image, description, url, gradient, tags }: Props) => {
+const WorkCard = ({
+  name,
+  image,
+  description,
+  url,
+  gradientBalls,
+  tags,
+}: Props) => {
   const item = {
     hidden: { opacity: 0 },
     show: {
@@ -45,14 +56,24 @@ const WorkCard = ({ name, image, description, url, gradient, tags }: Props) => {
         overflow="hidden"
         height="100%"
         as={motion.div}
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.02 }}
         variants={item}
       >
-        <Box className={gradient}>
+        <Box
+          bg="rgb(239, 239, 239)"
+          position="relative"
+          overflow="hidden"
+          borderRadius={10}
+        >
+          {gradientBalls.map(gradientBall => <Box key={gradientBall.id} className={gradientBall.gradient}></Box>)}
           <Image
             alt={"Thumbnail for the project " + name}
             src={image}
             aspectRatio="auto"
+            position="relative"
+            top={0}
+            left={0}
+            zIndex={2}
           />
         </Box>
 

@@ -1,5 +1,4 @@
 "use client";
-import WorkSection from "./components/WorkSection";
 import { SimpleGrid } from "@chakra-ui/react";
 import WorkSectionCard from "./components/WorkSectionCard";
 import projects from "../data/projects";
@@ -16,13 +15,15 @@ export default function Works() {
     },
   };
 
-
   return (
     <>
       <SimpleGrid
         columns={{ sm: 1, md: 2 }}
         spacing={10}
-        margin={{ base: "25px", sm: "35px", md: "50px", lg: "80px" }}
+        marginLeft={{ base: "25px", sm: "35px", md: "50px", lg: "60px" }}
+        marginRight={{ base: "25px", sm: "35px", md: "50px", lg: "60px" }}
+        marginTop={{ base: "15px", sm: "25px", md: "35px"}}
+        marginBottom={{ base: "15px", sm: "25px", md: "35px"}}
         justifyContent="center"
         as={motion.div}
         variants={container}
@@ -37,7 +38,7 @@ export default function Works() {
             image={project.image}
             description={project.description}
             url={project.url}
-            id={project.id}
+            gradient={project.gradient}
           />
         ))}
       </SimpleGrid>
