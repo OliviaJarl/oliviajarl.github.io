@@ -1,9 +1,9 @@
-import { Flex, Image, Box, Text } from "@chakra-ui/react";
+import { Flex, Image, Box, Text, SlideFade } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Introduction = () => {
-  const [display, setDisplay] = useState("none");
+  const [showGlasses, setShowGlasses] = useState(false);
 
   const container = {
     hidden: { opacity: 0 },
@@ -61,8 +61,8 @@ const Introduction = () => {
           position="relative"
           w={{ base: "70%", sm: "300px", md: "700px", lg: "800px" }}
           marginTop={{ base: "15px", md: "0px" }}
-          onMouseEnter={() => setDisplay("flex")}
-          onMouseLeave={() => setDisplay("none")}
+          onMouseEnter={() => setShowGlasses(true)}
+          onMouseLeave={() => setShowGlasses(false)}
           as={motion.div}
           variants={item}
         >
@@ -74,17 +74,17 @@ const Introduction = () => {
             borderRadius={300}
             zIndex={1}
           />
-
-          <Image
-            src="/sunglasses.svg"
-            alt="Sunglasses on hover"
-            zIndex={2}
-            position="absolute"
-            top="36%"
-            left="45%"
-            w="25%"
-            display={display}
-          />
+          <Box position="absolute" top="36%" left="45%">
+            <SlideFade in={showGlasses}>
+              <Image
+                src="/sunglasses.svg"
+                alt="Sunglasses on hover"
+                zIndex={2}
+                w="62%"
+                // display={showGlasses}
+              />
+            </SlideFade>
+          </Box>
         </Box>
       </Flex>
     </>
