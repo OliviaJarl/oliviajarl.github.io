@@ -20,8 +20,8 @@ export default function Works() {
       <SimpleGrid
         columns={{ sm: 1, md: 2 }}
         spacing={{ base: 5, md: 8 }}
-        marginLeft={{ base: "15px", md: "25px" }}
-        marginRight={{ base: "15px", md: "25px" }}
+        marginLeft={{ base: "15px", md: "25px", lg: "50px" }}
+        marginRight={{ base: "15px", md: "25px", lg: "50px" }}
         marginTop={{ base: "15px", sm: "25px", md: "35px" }}
         marginBottom={{ base: "15px", sm: "25px", md: "35px" }}
         justifyContent="center"
@@ -36,6 +36,7 @@ export default function Works() {
             key={project.id}
             name={project.name}
             image={project.image}
+            thumbnailSrcSet={project.thumbnailSrcSet}
             description={project.description}
             url={project.url}
             gradient={project.gradient}

@@ -21,7 +21,12 @@ const DesignProcessElement = ({
             <Heading size="md" marginBottom="10px">
               {title}
             </Heading>
-            <Text marginRight={{ md: "30px" }}>{description}</Text>
+            <Text
+              marginRight={{ md: "30px" }}
+              marginBottom={{ base: "12px", md: "0px" }}
+            >
+              {description}
+            </Text>
           </Flex>
           <Flex
             flexDir="column"
