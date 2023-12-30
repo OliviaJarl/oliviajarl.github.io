@@ -20,7 +20,7 @@ export default function MovieMatch() {
       <Image
         src={movieMatch["poster_image"]}
         alt="MovieMatch poster image"
-        aspectRatio="auto"
+        aspectRatio="1124/466 auto"
         marginBottom={{ base: "10px", md: "30px" }}
       />
       <Flex
@@ -78,29 +78,53 @@ export default function MovieMatch() {
         </Text>
         <Text marginBottom={bottomMargin}>{movieMatch["results"][1]}</Text>
         <SimpleGrid
-          columns={{ sm: 1, md: 2 }}
+          columns={{ sm: 1, md: 2, lg: 3 }}
           spacingY={{ base: "10px", md: "40px" }}
           spacingX={{ base: "10px", md: "100px" }}
           margin="auto"
           marginBottom={bottomMargin}
         >
           <Center w="fit-content">
-            <Image src="/movie_match/result_1.svg" alt="Result 1" />
+            <Image
+              src="/movie_match/result_1.svg"
+              alt="Result 1"
+              aspectRatio="208/439 auto"
+            />
           </Center>
           <Center w="fit-content">
-            <Image src="/movie_match/result_2.svg" alt="Result 2" />
+            <Image
+              src="/movie_match/result_2.svg"
+              alt="Result 2"
+              aspectRatio="208/439 auto"
+            />
           </Center>
           <Center w="fit-content">
-            <Image src="/movie_match/result_3.svg" alt="Result 3" />
+            <Image
+              src="/movie_match/result_3.svg"
+              alt="Result 3"
+              aspectRatio="208/439 auto"
+            />
           </Center>
           <Center w="fit-content">
-            <Image src="/movie_match/result_4.svg" alt="Result 4" />
+            <Image
+              src="/movie_match/result_4.svg"
+              alt="Result 4"
+              aspectRatio="208/439 auto"
+            />
           </Center>
           <Center w="fit-content">
-            <Image src="/movie_match/result_5.svg" alt="Result 5" />
+            <Image
+              src="/movie_match/result_5.svg"
+              alt="Result 5"
+              aspectRatio="208/439 auto"
+            />
           </Center>
           <Center w="fit-content">
-            <Image src="/movie_match/result_6.svg" alt="Result 6" />
+            <Image
+              src="/movie_match/result_6.svg"
+              alt="Result 6"
+              aspectRatio="208/439 auto"
+            />
           </Center>
         </SimpleGrid>
       </Flex>

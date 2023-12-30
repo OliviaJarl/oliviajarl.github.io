@@ -59,17 +59,14 @@ const WorkCard = ({
         whileHover={{ scale: 1.02 }}
         variants={item}
       >
-        <Box
-          bg="rgb(239, 239, 239)"
-          position="relative"
-          overflow="hidden"
-          borderRadius={10}
-        >
-          {gradientBalls.map(gradientBall => <Box key={gradientBall.id} className={gradientBall.gradient}></Box>)}
+        <Box bg="rgb(239, 239, 239)" position="relative" overflow="hidden">
+          {gradientBalls.map((gradientBall) => (
+            <Box key={gradientBall.id} className={gradientBall.gradient}></Box>
+          ))}
           <Image
             alt={"Thumbnail for the project " + name}
             src={image}
-            aspectRatio="auto"
+            aspectRatio="842/595 auto"
             position="relative"
             top={0}
             left={0}

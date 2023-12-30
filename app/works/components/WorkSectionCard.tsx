@@ -46,7 +46,6 @@ const WorkSectionCard = ({
         <Image
           alt={"Thumbnail for the project " + name}
           src={image}
-          h="500px"
           objectFit="cover"
           zIndex={1}
         />
@@ -62,7 +61,7 @@ const WorkSectionCard = ({
           backdropFilter="auto"
           backdropBlur="20px"
         >
-          <Heading marginLeft="20px" marginRight="20px">
+          <Heading marginLeft="20px" marginRight="20px" textAlign="center">
             {name}
           </Heading>
           <Text

@@ -15,7 +15,7 @@ export default function Zoolo() {
         src={zooloData["poster_image_small"]}
         alt="Zoolo poster image"
         srcSet={zooloData["posterSrcSet"]}
-        aspectRatio="auto"
+        aspectRatio="1280/643 auto"
         marginBottom={{ base: "10px", md: "30px" }}
       />
       <Heading size="2xl" marginBottom={"10px"} textAlign="center">
@@ -73,7 +73,7 @@ export default function Zoolo() {
           src="/zoolo/result1_500.jpg"
           srcSet="/zoolo/result1_500.jpg 500w, /zoolo/result1_1000.jpg 1000w, /zoolo/result1_1300.jpg 1300w"
           alt="Zoolo result 1"
-          aspectRatio="auto"
+          aspectRatio="1300/760 auto"
         />
         <Flex
           flexDir={{ base: "column", md: "row" }}
@@ -83,13 +83,13 @@ export default function Zoolo() {
             src="/zoolo/result2.png"
             alt="Zoolo result 2"
             w={{ md: "52%" }}
-            aspectRatio="auto"
+            aspectRatio="650/681 auto"
           />
           <Image
             src="/zoolo/result3.png"
             alt="Zoolo result 3"
             w={{ md: "48%" }}
-            aspectRatio="auto"
+            aspectRatio="650/681 auto"
           />
         </Flex>
         <Heading size="lg" marginBottom={bottomMarginHeading}>

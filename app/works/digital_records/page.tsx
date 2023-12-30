@@ -21,7 +21,7 @@ export default function Zoolo() {
         <Image
           src={digitalRecords["poster_image"]}
           alt="Digital records image"
-          aspectRatio="auto"
+          aspectRatio="649/340 auto"
           w={{ base: "100vw", lg: "70vw" }}
           marginBottom={{ base: "20px", md: "35px" }}
         />
@@ -90,35 +90,35 @@ export default function Zoolo() {
               <Image
                 src="/digital_records/result_1.svg"
                 alt="Result 1"
-                aspectRatio="auto"
+                aspectRatio="353/469 auto"
               />
             </Center>
             <Center>
               <Image
                 src="/digital_records/result_2.svg"
                 alt="Result 2"
-                aspectRatio="auto"
+                aspectRatio="353/469 auto"
               />
             </Center>
             <Center>
               <Image
                 src="/digital_records/result_3.svg"
                 alt="Result 3"
-                aspectRatio="auto"
+                aspectRatio="353/469 auto"
               />
             </Center>
             <Center>
               <Image
                 src="/digital_records/result_4.svg"
                 alt="Result 4"
-                aspectRatio="auto"
+                aspectRatio="353/469 auto"
               />
             </Center>
           </SimpleGrid>
           <Image
             src="/digital_records/project_poster500.png"
             srcSet={digitalRecords["project_poster_src"]}
-            aspectRatio="auto"
+            aspectRatio="1500/2121 auto"
             alt="Project poster"
             w={{ base: "100%", md: "60%" }}
             marginBottom={bottomMargin}

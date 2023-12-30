@@ -1,9 +1,9 @@
-import { Flex, Image, Box, Text } from "@chakra-ui/react";
+import { Flex, Image, Box, Text, SlideFade } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Introduction = () => {
-  const [display, setDisplay] = useState("none");
+  const [showGlasses, setShowGlasses] = useState(false);
 
   const container = {
     hidden: { opacity: 0 },
@@ -38,12 +38,12 @@ const Introduction = () => {
         animate="show"
       >
         <Box
-          marginRight={{ base: "0px", md: "10px" }}
+          marginRight={{ base: "0px", md: "10px", lg: "20px" }}
           as={motion.div}
           variants={item}
         >
           <Text
-            fontSize={{ base: "lg", sm: "2xl", md: "4xl" }}
+            fontSize={{ base: "lg", sm: "2xl", md: "3xl", lg: "4xl" }}
             align={{ base: "center", md: "left" }}
           >
             Hi! My name is Olivia, I am an engineering student at Chalmers
@@ -59,32 +59,32 @@ const Introduction = () => {
         </Box>
         <Box
           position="relative"
-          w={{ base: "70%", sm: "300px", md: "700px", lg: "800px" }}
+          w={{ base: "70%", sm: "300px", md: "800px", lg: "800px" }}
           marginTop={{ base: "15px", md: "0px" }}
-          onMouseEnter={() => setDisplay("flex")}
-          onMouseLeave={() => setDisplay("none")}
+          onMouseEnter={() => setShowGlasses(true)}
+          onMouseLeave={() => setShowGlasses(false)}
           as={motion.div}
           variants={item}
         >
           <Image
             src="/profile_picture500.jpg"
             srcSet="/profile_picture1500.jpg 1500w, /profile_picture1000.jpg 1000w, /profile_picture500.jpg 500w"
-            aspectRatio="auto"
+            aspectRatio="1 auto"
             alt="Profile image"
             borderRadius={300}
             zIndex={1}
           />
-
-          <Image
-            src="/sunglasses.svg"
-            alt="Sunglasses on hover"
-            zIndex={2}
-            position="absolute"
-            top="36%"
-            left="45%"
-            w="25%"
-            display={display}
-          />
+          {showGlasses ? (
+            <Image
+              src="/sunglasses.svg"
+              alt="Sunglasses on hover"
+              zIndex={2}
+              w="25%"
+              position="absolute"
+              top="36%"
+              left="45%"
+            />
+          ) : null}
         </Box>
       </Flex>
     </>
