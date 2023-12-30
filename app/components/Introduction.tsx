@@ -79,7 +79,7 @@ const Introduction = () => {
               src="/sunglasses.svg"
               alt="Sunglasses on hover"
               zIndex={2}
-              w="27%"
+              w="25%"
               position="absolute"
               top="36%"
               left="45%"
