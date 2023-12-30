@@ -74,17 +74,17 @@ const Introduction = () => {
             borderRadius={300}
             zIndex={1}
           />
-          <Box position="absolute" top="36%" left="45%">
-            <SlideFade in={showGlasses}>
-              <Image
-                src="/sunglasses.svg"
-                alt="Sunglasses on hover"
-                zIndex={2}
-                w="62%"
-                // display={showGlasses}
-              />
-            </SlideFade>
-          </Box>
+          {showGlasses ? (
+            <Image
+              src="/sunglasses.svg"
+              alt="Sunglasses on hover"
+              zIndex={2}
+              w="27%"
+              position="absolute"
+              top="36%"
+              left="45%"
+            />
+          ) : null}
         </Box>
       </Flex>
     </>
