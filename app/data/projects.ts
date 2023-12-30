@@ -1,6 +1,6 @@
 const projects = [{
     name: "Zoolo",
-    image: "/zoolo/thumbnail.svg",
+    image: "/zoolo/thumbnail.png",
     image_big: "/zoolo/thumbnail.svg",
     description: "The theme of the project was the storage of outdoor toys in preschools. We performed user studies, and the results were used to develop a new storage solution.",
     url: "/works/zoolo",

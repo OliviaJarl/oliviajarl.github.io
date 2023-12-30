@@ -66,7 +66,7 @@ const WorkCard = ({
           <Image
             alt={"Thumbnail for the project " + name}
             src={image}
-            aspectRatio="auto"
+            aspectRatio="842/595 auto"
             position="relative"
             top={0}
             left={0}

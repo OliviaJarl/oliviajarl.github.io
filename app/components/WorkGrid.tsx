@@ -18,7 +18,7 @@ const WorkGrid = () => {
     <Box margin={{ base: "25px", sm: "35px", md: "50px", lg: "80px" }}>
       <Heading marginBottom={{ base: "15px", md: "40px" }}>Works</Heading>
       <SimpleGrid
-        columns={{ sm: 1, md: 2, lg: 3 }}
+        columns={{ sm: 1, md: 2, xl: 3 }}
         spacing={8}
         justifyContent="center"
         as={motion.div}
