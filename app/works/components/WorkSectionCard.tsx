@@ -6,6 +6,7 @@ import { useState } from "react";
 interface Props {
   name: string;
   image: string;
+  thumbnailSrcSet: string;
   description: string;
   url: string;
   gradient: string;
@@ -14,6 +15,7 @@ interface Props {
 const WorkSectionCard = ({
   name,
   image,
+  thumbnailSrcSet,
   description,
   url,
   gradient,
@@ -46,6 +48,7 @@ const WorkSectionCard = ({
         <Image
           alt={"Thumbnail for the project " + name}
           src={image}
+          srcSet={thumbnailSrcSet}
           objectFit="cover"
           zIndex={1}
         />
