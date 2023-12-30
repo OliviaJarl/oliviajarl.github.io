@@ -33,6 +33,7 @@ const WorkGrid = () => {
             name={project.name}
             description={project.description}
             image={project.image}
+            thumbnailSrcSet={project.thumbnailSrcSet}
             url={project.url}
             gradientBalls={project.gradient_balls}
             tags={project.tags}

@@ -1,7 +1,7 @@
 const projects = [{
     name: "Zoolo",
-    image: "/zoolo/thumbnail.png",
-    image_big: "/zoolo/thumbnail.svg",
+    image: "/zoolo/thumbnail200.webp",
+    thumbnailSrcSet: "/zoolo/thumbnail200.webp 200w, /zoolo/thumbnail500.webp 500w, /zoolo/thumbnail842.webp 842w",
     description: "The theme of the project was the storage of outdoor toys in preschools. We performed user studies, and the results were used to develop a new storage solution.",
     url: "/works/zoolo",
     gradient: "gradient1",
@@ -34,7 +34,7 @@ const projects = [{
 {
     name: "Portable, digital medical record",
     image: "/digital_records/thumbnail.svg",
-    image_big: "/digital_records/thumbnail_big.svg",
+    thumbnailSrcSet: "",
     description: "This project was my bachelor's thesis, where we developed a portable, digital medical record for a psychiatric emergency department.",
     url: "/works/digital_records",
     gradient: "gradient2",
@@ -75,6 +75,7 @@ const projects = [{
 {
     name: "MovieMatch",
     image: "/movie_match/thumbnail.svg",
+    thumbnailSrcSet: "",
     description: "A project where we designed and implemented a mobile application on the theme of collaborative interaction.",
     url: "/works/movie_match",
     gradient: "gradient4",

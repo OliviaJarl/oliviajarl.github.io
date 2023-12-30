@@ -11,6 +11,7 @@ const Description = () => {
         <Image
           alt="Illustration"
           src="/illustration.svg"
+          minWidth={{ base: 250, md: 350, lg: 525 }}
           aspectRatio="auto"
           boxSize={{ base: 250, sm: 350, md: 450, lg: 400, xl: 450 }}
           marginBottom={{ base: "15px", md: "25px" }}

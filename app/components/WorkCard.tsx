@@ -25,6 +25,7 @@ interface GradientBall {
 interface Props {
   name: string;
   image: string;
+  thumbnailSrcSet: string;
   description: string;
   url: string;
   tags: Tag[];
@@ -34,6 +35,7 @@ interface Props {
 const WorkCard = ({
   name,
   image,
+  thumbnailSrcSet,
   description,
   url,
   gradientBalls,
@@ -63,15 +65,28 @@ const WorkCard = ({
           {gradientBalls.map((gradientBall) => (
             <Box key={gradientBall.id} className={gradientBall.gradient}></Box>
           ))}
-          <Image
-            alt={"Thumbnail for the project " + name}
-            src={image}
-            aspectRatio="842/595 auto"
-            position="relative"
-            top={0}
-            left={0}
-            zIndex={2}
-          />
+          {thumbnailSrcSet == "" ? (
+            <Image
+              alt={"Thumbnail for the project " + name}
+              src={image}
+              aspectRatio="842/595 auto"
+              position="relative"
+              top={0}
+              left={0}
+              zIndex={2}
+            />
+          ) : (
+            <Image
+              alt={"Thumbnail for the project " + name}
+              src={image}
+              srcSet={thumbnailSrcSet}
+              aspectRatio="842/595 auto"
+              position="relative"
+              top={0}
+              left={0}
+              zIndex={2}
+            />
+          )}
         </Box>
 
         <CardBody>

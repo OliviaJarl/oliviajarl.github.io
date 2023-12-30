@@ -72,9 +72,7 @@ animation: bg-animation 20s infinite alternate;
     opacity: 1;
     z-index: 1;
 
-
     animation: moveDiagonalLeftUp 30s normal infinite;
-
   }
 
   .g2 {
