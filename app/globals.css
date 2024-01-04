@@ -203,7 +203,7 @@ animation: bg-animation 20s infinite alternate;
     opacity: 1;
     z-index: 1;
 
-    animation: moveVerticalUp 25s normal infinite;
+    animation: moveVerticalUp 35s normal infinite;
   }
 
   .g10 {

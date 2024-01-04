@@ -73,6 +73,42 @@ const projects = [{
     id: 2,
 },
 {
+    name: "Resource booking site",
+    image: "/booking_site/thumbnail.png",
+    description: "In this project, I designed a graphic user interface for a room and equipment booking system.",
+    url: "/works/booking_site",
+    gradient: "gradient3",
+    gradient_balls: [
+        {
+        gradient: "g7",
+        id: 7
+    },
+    {
+        gradient: "g8",
+        id: 8
+    },
+    {
+        gradient: "g9",
+        id: 9
+    }
+    ],
+    tags: [
+        {
+        id: 1,
+        title: "Figma",
+        colorBackground: "#DBF2FF",
+        colorTitle: "#416275"
+        },
+        {
+        id: 2,
+        title: "UI design",
+        colorBackground: "#E9E5FF",
+        colorTitle: "#6256A3",
+        }, 
+    ],
+    id: 3,
+},
+{
     name: "MovieMatch",
     image: "/movie_match/thumbnail.svg",
     thumbnailSrcSet: "",

@@ -7,10 +7,10 @@ export function Header() {
     <header>
       <Flex
         justifyContent="space-between"
-        marginTop={{ base: "15px", md: "25px" }}
-        marginBottom={{ base: "15px", md: "25px" }}
+        marginTop={{ base: "10px", md: "15px" }}
+        marginBottom={{ base: "10px", md: "15px" }}
         marginLeft={{ base: "15px", md: "25px", lg: "50px" }}
-        marginRight={{ base: "15px", md: "25px", lg: "50px" }}
+        marginRight={{ base: "10px", md: "25px", lg: "50px" }}
       >
         <Link href={"/"}>
           <div>

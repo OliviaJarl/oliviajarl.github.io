@@ -28,7 +28,6 @@ export default function Booking() {
           marginBottom={{ base: "20px", md: "35px" }}
         />
       </Center>
-
       <Flex
         marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
         marginRight={{ base: "30px", md: "40px", xl: "270px" }}
@@ -45,7 +44,10 @@ export default function Booking() {
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
           </Heading>
-          <Text>{bookingSite["about"]}</Text>
+          <Text marginBottom={{ base: "5px", md: "15px" }}>
+            {bookingSite["about1"]}
+          </Text>
+          <Text>{bookingSite["about2"]}</Text>
         </Flex>
         <Details
           role={bookingSite["details"]["role"]}
