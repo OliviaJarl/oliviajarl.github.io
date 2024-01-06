@@ -43,31 +43,31 @@ const zooloData = {
         id: "1",
         title: "User studies", 
         description: "In our data gathering, we performed eight interviews with preschool staff, three observations at preschools and literature studies on children’s cognitive and motor development. The children were the primary users, and the preschool staff were the secondary users. During the interviews and observations, we focused on the preschool's existing storage solutions, what type of toys are stored, and the routines when toys are taken out and picked up.",
-        images: [ "/zoolo/zoolo_data_2.jpg"]
+        images: "/zoolo/zoolo_data_2.jpg"
         },
         {
         id: "2",
         title: "Analyse", 
         description: "We sorted the gathered data in an affinity diagram to identify problems and what caused the problem. The study results were the basis for a requirement list for developing a new storage solution. The requirement list was categorised into three main categories. The first category included more general requirements, such as what external factors it must handle and what functionality it must have, while the second and third categories included requirements regarding the users’ physical and cognitive abilities.",
-        images: [""]
+        images: ""
         },
         {
         id: "3",
         title: "Ideate", 
         description: "Before the ideation started, we narrowed the problem statement to smaller toys. Therefore, the user studies were supplemented with a more extensive study of existing storage solutions for smaller toys on the market. We also created user personas of primary users of three different ages to make it easier to relate to the users. To ideate, we used a combination of the methods of braindrawing and brainwriting and the method of morphological matrix.",
-        images: ["/zoolo/ideate.jpg"]
+        images: "/zoolo/ideate.jpg"
         },
         {
         id: "4",
         title: "Evaluate", 
         description: "The ideas were evaluated continuously to find the most suitable solution. We began with an elimination matrix to filter out the ideas that did not fulfil the requirements. To filter further, we asked preschool personnel to fill out a survey with questions about the ideas. The data from the survey supported the execution of a Pugh method, which resulted in three remaining concepts. We further developed these concepts and had users evaluate them to help us select the best one.",
-        images: ["/zoolo/evaluate.png"]
+        images: "/zoolo/evaluate.png"
         },
         {
         id: "5",
         title: "Prototype", 
         description: "To explore appropriate dimensions, we made a cardboard prototype of the winning concept at a scale of 1:1. The toy markings were inspired by pictures used in augmentative and alternative communication to consider the younger children's cognitive ability. The final design was visualised by a 3D model we made in Autodesk Alias.",
-        images: ["/zoolo/prototype.jpg"]
+        images: "/zoolo/prototype.jpg"
         },
     ],
     reflections: [

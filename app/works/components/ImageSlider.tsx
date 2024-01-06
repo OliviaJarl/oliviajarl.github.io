@@ -41,7 +41,13 @@ const ImageSlider = ({ slides }: Props) => {
         <Image
           alt={slides[currentIndex].title}
           src={slides[currentIndex].url}
-          w="80%"
+          w={{
+            base: "70%",
+            sm: "70%",
+            md: "80%",
+            lg: "600px",
+            xl: "750px",
+          }}
         />
         <IconButton
           bg="none"
@@ -52,7 +58,7 @@ const ImageSlider = ({ slides }: Props) => {
           onClick={goToNext}
         />
       </Center>
-      <Text fontStyle="italic" textColor="#797979">
+      <Text fontStyle="italic" textColor="#797979" textAlign="center">
         {slides[currentIndex].description}
       </Text>
     </VStack>

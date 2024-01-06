@@ -43,31 +43,31 @@ const digitalRecords = {
         id: "1",
         title: "User studies", 
         description: "During the project, we had close contact with the psychiatric emergency department, and thus, we were able to do several user studies. All group members visited the emergency department in pairs, where we observed patient meetings and conducted unstructured interviews with the healthcare workers. After making all the visits, we participated in a workshop with the healthcare workers and Predicare. The purpose of the workshop was to synchronise the different parties’ needs, wishes and views of the project. Neither during the visits nor the workshop was a doctor available for an interview. Therefore, we supplemented the previous user studies with an interview with a doctor to get their perspective on the usage situation.",
-        images: [""]
+        images: ""
         },
         {
         id: "2",
         title: "Analyse", 
         description: "All the gathered data was organised in an affinity diagram, giving us a clear view of the current situation. Many fields in the paper journal are regularly skipped or missed, partly because much information is communicated verbally instead. Some of the often skipped fields must be filled in by law. Therefore, the department managers expressed a wish that these would be mandatory to fill out in the application. We also saw that the paper journal is filled out dynamically instead of from top to bottom. It was also clear that the paper journal had different functionality depending on who was using it.",
-        images: ["/digital_records/affinity.jpg"]
+        images: "/digital_records/affinity.jpg"
         },
         {
         id: "3",
         title: "Ideate", 
         description: "After visiting the emergency department for the first time, we started to generate ideas because we wanted to get some early feedback at the workshop. After the workshop, we did a new ideation based on the feedback we had received. We used the method of Braindrawing to ideate and then the method of Sticky decision to investigate which ideas we thought had potential.",
-        images: ["/digital_records/ideate.jpg"]
+        images: "/digital_records/ideate.jpg"
         },
         {
         id: "4",
         title: "Prototype", 
         description: "We did some basic Figma prototypes of the early ideas we showed at the workshop. During our second iteration, another group member and I made an extensive prototype of the final design in Figma, which included all the different application pages. In parallel, the other group members implemented the application according to the Figma prototype. The application was built for Android tablets and written in Kotlin with the Jetpack Compose framework.",
-        images: ["/digital_records/prototype.svg"]
+        images: "/digital_records/prototype.svg"
         },
         {
         id: "5",
         title: "Evaluate", 
         description: "We could evaluate ideas frequently since we had continuous contact with the users. The project ended with a final evaluation of the design. In this evaluation, the users performed predefined tasks using the Figma prototype. The execution of the tasks was followed by an interview of the users’ experience, and they were also asked to fill out a semantic differential scale. The design was well received by the healthcare staff, who were optimistic about the digitisation of the paper journal. Most of the identified problems were related to new functionalities and concepts that did not exist in the paper journal.",
-        images: ["/digital_records/semantic.svg"]
+        images: "/digital_records/semantic.svg"
         },
     ],
     reflections: [

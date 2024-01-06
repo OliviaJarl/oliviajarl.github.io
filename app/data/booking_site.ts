@@ -95,19 +95,19 @@ const bookingSite = {
         id: "1",
         title: "User studies", 
         description: "I began the project by interviewing a teacher about what information and features they think are essential when booking rooms. The answers complemented the requirements in the project description. The teacher said, among other things, that including pictures of the rooms in the room description and being able to save favourites would be helpful. They also mentioned that it would be useful if all users could see who had made a booking so that you could contact them for a potential switch of classrooms. In addition to the small interview, I looked at existing interfaces for inspiration, such as AirBnb and Google Calendar.",
-        images: [""]
+        images: ""
         },
         {
         id: "2",
         title: "Wireframing", 
         description: "To explore user flows and layouts, I made wireframes in Figma. When the user flow and layout were decided, I made wireframes of all views in the interface. I spent much time wireframing, so the wireframes were elaborated and populated with all actual data except images.",
-        images: ["/booking_site/wireframe.svg"]
+        images: "/booking_site/wireframe.svg"
         },
         {
         id: "3",
         title: "Prototype", 
         description: "An interactive prototype was made in Figma based on the wireframes. I used Figma components and variants to facilitate potential design changes. Due to lack of time, I mainly focused on interactivity rather than further development of the aesthetics of the interface elements. Therefore, I later did a second iteration of the design, where I made a mockup of the interface. This mockup is intended to make the interface more aesthetically pleasing.",
-        images: ["/booking_site/prototype.svg"]
+        images: "/booking_site/prototype.svg"
         },
     ],
     reflections: "During this project, I underestimated how long prototyping takes. This resulted in high fidelity regarding interactivity, but the prototype was too similar to the wireframes. In future projects, I will plan the time for each task better to achieve more uniform fidelity throughout the design.",
