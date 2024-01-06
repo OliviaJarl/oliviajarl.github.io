@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 import ProcessOverview from "../components/ProcessOverview";
 import Details from "../components/Details";
-import Reflection from "../components/Reflection";
 import bookingSite from "@/app/data/booking_site";
 import DesignProcessElement from "../components/DesignProcessElement";
 import ImageSlider from "../components/ImageSlider";
@@ -24,7 +23,7 @@ export default function Booking() {
           src={bookingSite["poster_image"]}
           alt="Booking poster image"
           srcSet={bookingSite["posterSrcSet"]}
-          aspectRatio="auto"
+          aspectRatio="1500/731 auto"
           w={{ base: "100vw", lg: "70vw" }}
           marginBottom={{ base: "20px", md: "35px" }}
         />

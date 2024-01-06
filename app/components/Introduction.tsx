@@ -1,49 +1,20 @@
-import { Flex, Image, Box, Text, SlideFade } from "@chakra-ui/react";
+import { Flex, Image, Box, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 const Introduction = () => {
   const [showGlasses, setShowGlasses] = useState(false);
-
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 1.4,
-      },
-    },
-  };
-  const item = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        duration: 2,
-      },
-    },
-  };
 
   return (
     <>
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
-        height={{ base: "450px", sm: "500px", md: "500px", lg: "800px" }}
         marginLeft={{ base: "20px", sm: "40px", lg: "100px" }}
         marginRight={{ base: "20px", sm: "40px", lg: "100px" }}
         marginTop={{ base: "10px", sm: "20px", lg: "40px" }}
         marginBottom="15px"
-        as={motion.div}
-        variants={container}
-        initial="hidden"
-        animate="show"
       >
-        <Box
-          marginRight={{ base: "0px", md: "10px", lg: "20px" }}
-          as={motion.div}
-          variants={item}
-        >
+        <Box marginRight={{ base: "0px", md: "10px", lg: "20px" }}>
           <Text
             fontSize={{ base: "lg", sm: "2xl", md: "3xl", lg: "4xl" }}
             align={{ base: "center", md: "left" }}
@@ -65,8 +36,6 @@ const Introduction = () => {
           marginTop={{ base: "15px", md: "0px" }}
           onMouseEnter={() => setShowGlasses(true)}
           onMouseLeave={() => setShowGlasses(false)}
-          as={motion.div}
-          variants={item}
         >
           <Image
             src="/profile_picture500.jpg"
