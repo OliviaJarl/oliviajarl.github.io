@@ -3,14 +3,14 @@ import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 interface DesignProcess {
   title: string;
   description: string;
-  images: string[];
+  images: string;
 }
 const DesignProcessElement = ({
   title,
   description,
   images,
 }: DesignProcess) => {
-  if (images[0] != "") {
+  if (images != "") {
     return (
       <>
         <Flex
@@ -39,14 +39,14 @@ const DesignProcessElement = ({
               display="flex"
               marginBottom={{ base: "10px", md: "0px" }}
             >
-              {images?.map((image) => (
+              
                 <Image
-                  key={image.charAt(image.length - 1)}
-                  src={image}
-                  alt={"Design process image " + image}
+                  key={images.charAt(images.length - 1)}
+                  src={images}
+                  alt={"Design process image " + images}
                   aspectRatio="auto"
                 />
-              ))}
+              
             </Box>
           </Flex>
         </Flex>

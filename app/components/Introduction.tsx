@@ -29,9 +29,11 @@ const Introduction = () => {
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         alignItems="center"
+        height={{ base: "450px", sm: "500px", md: "500px", lg: "800px" }}
         marginLeft={{ base: "20px", sm: "40px", lg: "100px" }}
         marginRight={{ base: "20px", sm: "40px", lg: "100px" }}
         marginTop={{ base: "10px", sm: "20px", lg: "40px" }}
+        marginBottom="15px"
         as={motion.div}
         variants={container}
         initial="hidden"

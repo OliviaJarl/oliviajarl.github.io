@@ -31,19 +31,19 @@ const movieMatch = {
         id: "1",
         title: "Ideate", 
         description: "We started the project by brainstorming ideas on the theme of collaborative interaction. After we had decided to do an application where a group decides on movies, we looked at existing apps with similar functionality to get some inspiration. To lay a foundation for the user flow, we made some fast sketches.",
-        images: ["/movie_match/ideation.png"]
+        images: "/movie_match/ideation.png"
         },
         {
         id: "2",
         title: "Prototype", 
         description: "The sketches were further developed in Figma, where we followed the Material design guidelines and used Material design components. We used the Figma prototype to evaluate the design by letting users perform predefined tasks. The participants expressed that the application was intuitive, and we got feedback on improvements.",
-        images: [""]
+        images: ""
         },
         {
         id: "3",
         title: "Implement", 
         description: "We implemented the application with the SDK Flutter, written in the programming language Dart. The application fetched movie data from the TMDB’s API, such as movie titles, poster images, genres, and descriptions. I was responsible for the app’s communication with Firebase. This includes the authentication functionality and sending and fetching group data from Firestore. It was convenient to work with Firestore because you could easily create, edit, and overview data in the web application, which helped the development process. I also coded the logic in the app, e.g., how to create or join a group and only show movies all group members have approved.",
-        images: ["/movie_match/firebase.svg"]
+        images: "/movie_match/firebase.svg"
         },
     ],
     reflections: [

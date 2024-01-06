@@ -1,36 +1,4 @@
-const projects = [{
-    name: "Zoolo",
-    image: "/zoolo/thumbnail200.webp",
-    thumbnailSrcSet: "/zoolo/thumbnail200.webp 200w, /zoolo/thumbnail500.webp 500w, /zoolo/thumbnail842.webp 842w",
-    description: "The theme of the project was the storage of outdoor toys in preschools. We performed user studies, and the results were used to develop a new storage solution.",
-    url: "/works/zoolo",
-    gradient: "gradient1",
-    gradient_balls: [
-        {
-        gradient: "g1",
-        id: 1
-    },
-    {
-        gradient: "g2",
-        id: 2
-    }
-    ],
-    tags: [
-            {
-            id: 1,
-            title: "User studies",
-            colorBackground: "#DCEDEC",
-            colorTitle: "#267169"
-            },
-            {
-            id: 2,
-            title: "Industrial design",
-            colorBackground: "#C9DAF4",
-            colorTitle: "#2D5DA6"
-            }, 
-        ],
-    id: 1,
-},
+const projects = [
 {
     name: "Portable, digital medical record",
     image: "/digital_records/thumbnail.svg",
@@ -70,7 +38,77 @@ const projects = [{
         colorTitle: "#6256A3"
         }, 
     ],
+    id: 1,
+},
+{
+    name: "Resource booking site",
+    image: "/booking_site/thumbnail200.webp",
+    thumbnailSrcSet: "/booking_site/thumbnail200.webp 200w, /booking_site/thumbnail500.webp 500w, /booking_site/thumbnail842.webp 842w",
+    description: "In this project, I designed a graphic user interface for a room and equipment booking system.",
+    url: "/works/booking_site",
+    gradient: "gradient3",
+    gradient_balls: [
+        {
+        gradient: "g7",
+        id: 7
+    },
+    {
+        gradient: "g8",
+        id: 8
+    },
+    {
+        gradient: "g9",
+        id: 9
+    }
+    ],
+    tags: [
+        {
+        id: 1,
+        title: "Figma",
+        colorBackground: "#DBF2FF",
+        colorTitle: "#416275"
+        },
+        {
+        id: 2,
+        title: "UI design",
+        colorBackground: "#E9E5FF",
+        colorTitle: "#6256A3",
+        }, 
+    ],
     id: 2,
+},
+{
+    name: "Zoolo",
+    image: "/zoolo/thumbnail200.webp",
+    thumbnailSrcSet: "/zoolo/thumbnail200.webp 200w, /zoolo/thumbnail500.webp 500w, /zoolo/thumbnail842.webp 842w",
+    description: "The theme of the project was the storage of outdoor toys in preschools. We performed user studies, and the results were used to develop a new storage solution.",
+    url: "/works/zoolo",
+    gradient: "gradient1",
+    gradient_balls: [
+        {
+        gradient: "g1",
+        id: 1
+    },
+    {
+        gradient: "g2",
+        id: 2
+    }
+    ],
+    tags: [
+            {
+            id: 1,
+            title: "User studies",
+            colorBackground: "#DCEDEC",
+            colorTitle: "#267169"
+            },
+            {
+            id: 2,
+            title: "Industrial design",
+            colorBackground: "#C9DAF4",
+            colorTitle: "#2D5DA6"
+            }, 
+        ],
+    id: 3,
 },
 {
     name: "MovieMatch",
