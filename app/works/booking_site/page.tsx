@@ -1,3 +1,4 @@
+"use client";
 import {
   Center,
   Image,
@@ -5,13 +6,13 @@ import {
   Flex,
   Text,
   SimpleGrid,
-  VStack,
 } from "@chakra-ui/react";
 import ProcessOverview from "../components/ProcessOverview";
 import Details from "../components/Details";
 import Reflection from "../components/Reflection";
 import bookingSite from "@/app/data/booking_site";
 import DesignProcessElement from "../components/DesignProcessElement";
+import ImageSlider from "../components/ImageSlider";
 
 export default function Booking() {
   const bottomMargin = { base: "10px", md: "40px" };
@@ -20,7 +21,7 @@ export default function Booking() {
     <>
       <Center>
         <Image
-          src={bookingSite["poster_image_small"]}
+          src={bookingSite["poster_image"]}
           alt="Booking poster image"
           srcSet={bookingSite["posterSrcSet"]}
           aspectRatio="auto"
@@ -29,8 +30,8 @@ export default function Booking() {
         />
       </Center>
       <Flex
-        marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
-        marginRight={{ base: "30px", md: "40px", xl: "270px" }}
+        marginLeft={{ base: "30px", md: "50px", lg: "150px", xl: "300px" }}
+        marginRight={{ base: "30px", md: "50px", lg: "150px", xl: "300px" }}
         flexDir="column"
       >
         <Heading
@@ -86,24 +87,11 @@ export default function Booking() {
           Result
         </Heading>
         <Text marginBottom={bottomMargin}>{bookingSite["results"]}</Text>
-
+        <ImageSlider slides={bookingSite["result_images"]} />
         <Heading size="lg" marginBottom={bottomMarginHeading}>
-          Reflections
+          Reflection
         </Heading>
-        <SimpleGrid
-          columns={{ base: 1, md: 2 }}
-          spacing={8}
-          justifyContent="center"
-          marginBottom={bottomMargin}
-        >
-          {bookingSite["reflections"].map((reflection) => (
-            <Reflection
-              key={reflection.id}
-              title={reflection.title}
-              content={reflection.content}
-            />
-          ))}
-        </SimpleGrid>
+        <Text>{bookingSite["reflections"]}</Text>
       </Flex>
     </>
   );

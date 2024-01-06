@@ -16,7 +16,7 @@ const theme = extendTheme({ config,
   },
   colors: {
     brand: {
-      100: "#2D384C",
+      100: "#283141",
       200: "#4d6082",
     },
     buttons: {
@@ -38,7 +38,7 @@ const theme = extendTheme({ config,
     },
     Heading: {
       baseStyle: {
-        color: "#2D384C"
+        color: "#283141"
       },
     },
     Button: {
