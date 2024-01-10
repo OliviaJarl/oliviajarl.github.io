@@ -111,6 +111,43 @@ const projects = [
     id: 3,
 },
 {
+    name: "Alarm monitoring and control unit",
+    image: "/alarm_unit/thumbnail.svg",
+    thumbnailSrcSet: "",
+    description: "In this project, we performed a cognitive ergonomic analysis of a ship’s bridge and its operators. The project resulted in an interface for alarm monitoring and control unit.",
+    url: "/works/alarm_unit",
+    gradient: "gradient5",
+    gradient_balls: [
+        {
+        gradient: "g12",
+        id: 12
+    },
+    {
+        gradient: "g13",
+        id: 13
+    },
+    {
+        gradient: "g14",
+        id: 14
+    },
+    ],
+    tags: [
+        {
+        id: 1,
+        title: "User studies",
+        colorBackground: "#DCEDEC",
+        colorTitle: "#267169"
+        },
+        {
+        id: 2,
+        title: "Cognitive ergonomics",
+        colorBackground: "#D1D5ED",
+        colorTitle: "#424C86",
+        }, 
+    ],
+    id: 4,
+},
+{
     name: "MovieMatch",
     image: "/movie_match/thumbnail.svg",
     thumbnailSrcSet: "",
@@ -141,7 +178,7 @@ const projects = [
         colorTitle: "#95439C"
         }, 
     ],
-    id: 4,
+    id: 5,
 },
 ];
 

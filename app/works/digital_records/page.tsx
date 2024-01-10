@@ -85,35 +85,29 @@ export default function Zoolo() {
           <SimpleGrid
             columns={{ sm: 1, lg: 2 }}
             marginBottom={{ base: "10px", md: "20px" }}
+            justifyItems="center"
           >
-            <Center>
-              <Image
-                src="/digital_records/result_1.svg"
-                alt="Result 1"
-                aspectRatio="353/469 auto"
-              />
-            </Center>
-            <Center>
-              <Image
-                src="/digital_records/result_2.svg"
-                alt="Result 2"
-                aspectRatio="353/469 auto"
-              />
-            </Center>
-            <Center>
-              <Image
-                src="/digital_records/result_3.svg"
-                alt="Result 3"
-                aspectRatio="353/469 auto"
-              />
-            </Center>
-            <Center>
-              <Image
-                src="/digital_records/result_4.svg"
-                alt="Result 4"
-                aspectRatio="353/469 auto"
-              />
-            </Center>
+            <Image
+              src="/digital_records/result_1.svg"
+              alt="Result 1"
+              aspectRatio="353/469 auto"
+            />
+            <Image
+              src="/digital_records/result_2.svg"
+              alt="Result 2"
+              aspectRatio="353/469 auto"
+            />
+            <Image
+              src="/digital_records/result_3.svg"
+              alt="Result 3"
+              aspectRatio="353/469 auto"
+            />
+
+            <Image
+              src="/digital_records/result_4.svg"
+              alt="Result 4"
+              aspectRatio="353/469 auto"
+            />
           </SimpleGrid>
           <Image
             src="/digital_records/project_poster500.png"
