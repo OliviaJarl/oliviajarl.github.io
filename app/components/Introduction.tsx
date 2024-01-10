@@ -69,7 +69,7 @@ const Introduction = () => {
             src="/profile_picture500.jpg"
             srcSet="/profile_picture1500.jpg 1500w, /profile_picture1000.jpg 1000w, /profile_picture500.jpg 500w"
             aspectRatio="1/1 auto"
-            w={{ base: "70%", sm: "300px", md: "800px" }}
+            w={{ base: "225px", sm: "300px", md: "800px" }}
             alt="Profile image"
             borderRadius={300}
             zIndex={1}
