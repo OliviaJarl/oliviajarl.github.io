@@ -7,8 +7,6 @@ const Education = () => {
         size="md"
         color="brand.100"
         marginBottom={{ base: "10px", lg: "20px" }}
-        borderBottom={{ base: "0px", lg: "2px" }}
-        borderColor="#2D384C"
       >
         Education
       </Heading>
