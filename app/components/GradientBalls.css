@@ -1,0 +1,309 @@
+
+.g1 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    background: radial-gradient(circle at center, rgba(153, 192, 255, 0.8) 0, rgba(64, 107, 177, 0) 50%) no-repeat;
+    width: 180%;
+    height: 180%;
+    opacity: 1;
+    z-index: 1;
+
+    animation: moveDiagonalLeftUp 30s normal infinite;
+  }
+
+  .g2 {
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    background: radial-gradient(circle at center, rgba(239, 187, 255, 0.8) 0, rgba(223,133, 161, 0) 50%) no-repeat;
+    z-index: 1;
+
+
+    width: 150%;
+    height: 150%;
+    top: 1;
+    left: 1;
+
+
+    opacity: 1;
+
+    animation: moveDiagonalRightDown 30s normal infinite;
+
+  }
+
+  .g3 {
+    position: absolute;
+    top: 10%;
+    left: -70%;
+    background: radial-gradient(circle at center, rgba(187, 243, 247, 0.9) 0, rgba(64, 107, 177, 0) 50%) no-repeat;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+    z-index: 1;
+
+    animation: moveDiagonalRightUp 30s normal infinite;
+
+
+
+  }
+
+  .g4 {
+    position: absolute;
+    top: -60%;
+    left: 30%;
+    background: radial-gradient(circle at center, rgba(255, 213, 228, 0.8) 0, rgba(223,133, 161, 0) 50%) no-repeat;
+    z-index: 1;
+
+
+    width: 150%;
+    height: 150%;
+    top: 1;
+    left: 1;
+
+
+    opacity: 1;
+
+    animation: moveDiagonalLeftDown 30s normal infinite;
+
+  }
+
+  .g5 {
+    position: absolute;
+    top: 10%;
+    left: -35%;
+    background: radial-gradient(circle at center, rgba(215, 255, 218, 0.9) 0, rgba(160, 225, 167, 0) 50%) no-repeat;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+    z-index: 1;
+
+    animation: moveVerticalUp 25s normal infinite;
+  }
+
+  .g6 {
+    position: absolute;
+    top: -60%;
+    left: -30%;
+    background: radial-gradient(circle at center, rgba(234, 215, 255, 0.8) 0, rgba(215, 112, 225, 0) 50%) no-repeat;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+    z-index: 1;
+    animation: moveVerticalDown 30s normal infinite;
+
+  }
+
+  .g7 {
+    position: absolute;
+    top: 10%;
+    left: -70%;
+    background: radial-gradient(circle at center, rgba(129, 188, 211, 0.8) 0, rgba(38, 110, 137, 0) 50%) no-repeat;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+    z-index: 1;
+
+    animation: moveDiagonalRightUp 30s normal infinite;
+
+
+
+  }
+
+  .g8 {
+    position: absolute;
+    top: -60%;
+    left: 30%;
+    background: radial-gradient(circle at center, rgba(250, 195, 201, 0.8) 0, rgba(223,133, 161, 0) 50%) no-repeat;
+    z-index: 1;
+
+
+    width: 150%;
+    height: 150%;
+    top: 1;
+    left: 1;
+
+
+    opacity: 1;
+
+    animation: moveDiagonalLeftDown 30s normal infinite;
+
+  }
+
+  .g9 {
+    position: absolute;
+    top: 5%;
+    left: -35%;
+    background: radial-gradient(circle at center, rgba(255, 247, 212, 0.9) 0, rgba(160, 225, 167, 0) 50%) no-repeat;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+    z-index: 1;
+
+    animation: moveVerticalUp 35s normal infinite;
+  }
+
+  .g10 {
+    position: absolute;
+    top: 10%;
+    left: -70%;
+    background: radial-gradient(circle at center, rgba(208, 188, 255, 0.8) 0, rgba(38, 110, 137, 0) 50%) no-repeat;
+    width: 180%;
+    height: 180%;
+    opacity: 1;
+    z-index: 1;
+
+    animation: moveDiagonalRightUp 30s normal infinite;
+
+  }
+
+  .g11 {
+    position: absolute;
+    top: -60%;
+    left: 30%;
+    background: radial-gradient(circle at center, rgba(255, 199, 226, 0.8) 0, rgba(223,133, 161, 0) 50%) no-repeat;
+    z-index: 1;
+
+
+    width: 150%;
+    height: 150%;
+    top: 1;
+    left: 1;
+
+
+    opacity: 1;
+
+    animation: moveDiagonalLeftDown 30s normal infinite;
+
+  }
+
+  .g12 {
+    position: absolute;
+    top: 10%;
+    left: -70%;
+    background: radial-gradient(circle at center, #fcd498cc 0, rgba(38, 110, 137, 0) 50%) no-repeat;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+    z-index: 1;
+
+    animation: moveDiagonalRightUp 30s normal infinite;
+
+  }
+
+  .g13 {
+    position: absolute;
+    top: -60%;
+    left: 30%;
+    background: radial-gradient(circle at center, rgba(190,195, 224, 80) 0, rgba(223,133, 161, 0) 50%) no-repeat;
+    z-index: 1;
+
+
+    width: 130%;
+    height: 130%;
+    top: 1;
+    left: 1;
+
+
+    opacity: 1;
+
+    animation: moveDiagonalLeftDown 30s normal infinite;
+
+  }
+
+  .g14 {
+    position: absolute;
+    top: -60%;
+    left: -30%;
+    background: radial-gradient(circle at center, rgba(237, 170, 170, 0.8) 0, rgba(237, 170, 170, 0) 50%) no-repeat;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+    z-index: 1;
+    animation: moveVerticalDown 30s normal infinite;
+
+  }
+
+  @keyframes moveVerticalDown {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(70%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes moveVerticalUp {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-70%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  @keyframes moveHorizontal {
+    0% {
+      transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes moveDiagonalLeftUp {
+    0% {
+      transform: translateX(5%) translateY(0%);
+    }
+    50% {
+      transform: translateX(-55%) translateY(-30%);
+    }
+    100% {
+      transform: translateX(5%) translateY(0%);
+    }
+  }
+
+  @keyframes moveDiagonalRightDown {
+    0% {
+      transform: translateX(-5%) translateY(0%);
+    }
+    50% {
+      transform: translateX(55%) translateY(40%);
+    }
+    100% {
+      transform: translateX(-5%) translateY(0%);
+    }
+  }
+
+  @keyframes moveDiagonalRightUp {
+    0% {
+      transform: translateX(-5%) translateY(0%);
+    }
+    50% {
+      transform: translateX(55%) translateY(-40%);
+    }
+    100% {
+      transform: translateX(-5%) translateY(0%);
+    }
+  }
+
+  @keyframes moveDiagonalLeftDown {
+    0% {
+      transform: translateX(0%) translateY(0%);
+    }
+    50% {
+      transform: translateX(-55%) translateY(40%);
+    }
+    100% {
+      transform: translateX(0%) translateY(0%);
+    }
+  }

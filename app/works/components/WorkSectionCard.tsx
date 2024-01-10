@@ -1,5 +1,6 @@
 import { Image, Card, Heading, VStack, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import "./Gradients.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
 

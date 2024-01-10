@@ -8,6 +8,7 @@ import {
   Tag,
   Text,
 } from "@chakra-ui/react";
+import "./GradientBalls.css"
 import Link from "next/link";
 import { motion } from "framer-motion";
 
