@@ -12,10 +12,9 @@ import Details from "../components/Details";
 import bookingSite from "@/app/data/booking_site";
 import DesignProcessElement from "../components/DesignProcessElement";
 import ImageSlider from "../components/ImageSlider";
+import { bottomMarginWork, bottomMarginHeading, sideMarginsWork } from "@/app/constants";
 
 export default function Booking() {
-  const bottomMargin = { base: "10px", md: "40px" };
-  const bottomMarginHeading = { base: "10px", md: "25px" };
   return (
     <>
       <Center>
@@ -29,8 +28,8 @@ export default function Booking() {
         />
       </Center>
       <Flex
-        marginLeft={{ base: "30px", md: "50px", lg: "150px", xl: "300px" }}
-        marginRight={{ base: "30px", md: "50px", lg: "150px", xl: "300px" }}
+        marginLeft={sideMarginsWork}
+        marginRight={sideMarginsWork}
         flexDir="column"
       >
         <Heading
@@ -40,7 +39,7 @@ export default function Booking() {
         >
           {bookingSite["title"]}
         </Heading>
-        <Flex marginBottom={bottomMargin} flexDir="column">
+        <Flex marginBottom={bottomMarginWork} flexDir="column">
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
           </Heading>
@@ -61,7 +60,7 @@ export default function Booking() {
           columns={{ sm: 1, md: 3 }}
           spacing={4}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {bookingSite["process_overview"].map((process) => (
             <ProcessOverview
@@ -85,7 +84,7 @@ export default function Booking() {
         <Heading size="lg" marginBottom={bottomMarginHeading}>
           Result
         </Heading>
-        <Text marginBottom={bottomMargin}>{bookingSite["results"]}</Text>
+        <Text marginBottom={bottomMarginWork}>{bookingSite["results"]}</Text>
         <ImageSlider slides={bookingSite["result_images"]} />
         <Heading size="lg" marginBottom={bottomMarginHeading}>
           Reflection

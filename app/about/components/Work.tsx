@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import ResumeItem from "./ResumeItem";
 const Work = () => {
   return (
@@ -12,8 +12,7 @@ const Work = () => {
       </Heading>
       <ResumeItem
         heading="Designer at Wiretronic's AI division, Wirevision"
-        description="I mainly worked with graphic design, and some of the tasks were designing user
-        manuals, symbols and icons, illustrations and Word and Powerpoint templates."
+        description="I mainly worked with graphic design, and some of my tasks were making user manuals, symbols, and illustrations. I also made app design proposals for meetings with potential customers."
         time="06.2023 -"
       />
       <ResumeItem

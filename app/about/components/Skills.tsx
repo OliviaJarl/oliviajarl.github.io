@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import ResumeItem from "./ResumeItem";
 const Skills = () => {
   return (

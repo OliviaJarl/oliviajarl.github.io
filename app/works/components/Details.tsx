@@ -1,5 +1,5 @@
 import { TableContainer, Table, Tbody, Tr, Td, Center } from "@chakra-ui/react";
-
+import { bottomMarginWork } from "@/app/constants";
 interface Props {
   projectTime: string;
   role: string;
@@ -7,7 +7,7 @@ interface Props {
 }
 const Details = ({ projectTime, role, challenge }: Props) => {
   return (
-    <Center marginBottom={{ base: "10px", md: "40px" }}>
+    <Center marginBottom={bottomMarginWork}>
       <TableContainer w={{ base: "100%", md: "95%" }}>
         <Table variant="simple" size="md">
           <Tbody whiteSpace="pre" fontSize={{ base: "xs", md: "lg" }}>

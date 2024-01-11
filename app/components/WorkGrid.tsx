@@ -15,7 +15,7 @@ const WorkGrid = () => {
   };
 
   return (
-    <Box margin={{ base: "15px", md: "25px", lg: "50px" }}>
+    <Box margin={{ base: "20px", md: "25px", lg: "50px" }}>
       <Heading marginBottom={{ base: "15px", md: "40px" }}>Works</Heading>
       <SimpleGrid
         columns={{ sm: 1, md: 2, xl: 3 }}

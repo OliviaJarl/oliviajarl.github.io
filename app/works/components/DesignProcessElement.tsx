@@ -1,3 +1,4 @@
+import { bottomMarginWork } from "@/app/constants";
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 interface DesignProcess {
@@ -15,7 +16,7 @@ const DesignProcessElement = ({
       <>
         <Flex
           flexDir={{ base: "column", md: "row" }}
-          marginBottom={{ base: "30px", md: "40px" }}
+          marginBottom={bottomMarginWork}
         >
           <Flex flexDir="column" w={{ md: "70%" }}>
             <Heading size="md" marginBottom="10px">
@@ -39,14 +40,12 @@ const DesignProcessElement = ({
               display="flex"
               marginBottom={{ base: "10px", md: "0px" }}
             >
-              
-                <Image
-                  key={images.charAt(images.length - 1)}
-                  src={images}
-                  alt={"Design process image " + images}
-                  aspectRatio="auto"
-                />
-              
+              <Image
+                key={images.charAt(images.length - 1)}
+                src={images}
+                alt={"Design process image " + images}
+                aspectRatio="auto"
+              />
             </Box>
           </Flex>
         </Flex>
@@ -58,7 +57,7 @@ const DesignProcessElement = ({
       <Heading size="md" marginBottom="10px">
         {title}
       </Heading>
-      <Text marginBottom={{ base: "30px", md: "40px" }}>{description}</Text>
+      <Text marginBottom={bottomMarginWork}>{description}</Text>
     </>
   );
 };

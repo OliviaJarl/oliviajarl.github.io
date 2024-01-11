@@ -8,13 +8,15 @@ import {
 } from "@chakra-ui/react";
 import ProcessOverview from "../components/ProcessOverview";
 import Details from "../components/Details";
-import Reflection from "../components/Reflection";
 import movieMatch from "@/app/data/movie_match";
 import DesignProcessElement from "../components/DesignProcessElement";
+import {
+  bottomMarginWork,
+  bottomMarginHeading,
+  sideMarginsWork,
+} from "@/app/constants";
 
 export default function MovieMatch() {
-  const bottomMargin = { base: "10px", md: "40px" };
-  const bottomMarginHeading = { base: "10px", md: "25px" };
   return (
     <>
       <Image
@@ -24,14 +26,14 @@ export default function MovieMatch() {
         marginBottom={{ base: "10px", md: "30px" }}
       />
       <Flex
-        marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
-        marginRight={{ base: "30px", md: "40px", xl: "270px" }}
+        marginLeft={sideMarginsWork}
+        marginRight={sideMarginsWork}
         flexDir="column"
       >
         <Heading size="2xl" marginBottom={"10px"} textAlign="center">
           {movieMatch["title"]}
         </Heading>
-        <Flex marginBottom={bottomMargin} flexDir="column">
+        <Flex marginBottom={bottomMarginWork} flexDir="column">
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
           </Heading>
@@ -49,7 +51,7 @@ export default function MovieMatch() {
           columns={{ sm: 1, md: 3 }}
           spacing={4}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {movieMatch["process_overview"].map((process) => (
             <ProcessOverview
@@ -76,56 +78,45 @@ export default function MovieMatch() {
         <Text marginBottom={{ base: "10px", md: "25px" }}>
           {movieMatch["results"][0]}
         </Text>
-        <Text marginBottom={bottomMargin}>{movieMatch["results"][1]}</Text>
+        <Text marginBottom={bottomMarginWork}>{movieMatch["results"][1]}</Text>
         <SimpleGrid
           columns={{ sm: 1, md: 2, lg: 3 }}
-          spacingY={{ base: "10px", md: "40px" }}
+          spacingY={{ base: "20px", md: "40px" }}
           spacingX={{ base: "10px", md: "100px" }}
           margin="auto"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
+          justifyItems="center"
         >
-          <Center w="fit-content">
-            <Image
-              src="/movie_match/result_1.svg"
-              alt="Result 1"
-              aspectRatio="208/439 auto"
-            />
-          </Center>
-          <Center w="fit-content">
-            <Image
-              src="/movie_match/result_2.svg"
-              alt="Result 2"
-              aspectRatio="208/439 auto"
-            />
-          </Center>
-          <Center w="fit-content">
-            <Image
-              src="/movie_match/result_3.svg"
-              alt="Result 3"
-              aspectRatio="208/439 auto"
-            />
-          </Center>
-          <Center w="fit-content">
-            <Image
-              src="/movie_match/result_4.svg"
-              alt="Result 4"
-              aspectRatio="208/439 auto"
-            />
-          </Center>
-          <Center w="fit-content">
-            <Image
-              src="/movie_match/result_5.svg"
-              alt="Result 5"
-              aspectRatio="208/439 auto"
-            />
-          </Center>
-          <Center w="fit-content">
-            <Image
-              src="/movie_match/result_6.svg"
-              alt="Result 6"
-              aspectRatio="208/439 auto"
-            />
-          </Center>
+          <Image
+            src="/movie_match/result_1.svg"
+            alt="Result 1"
+            aspectRatio="208/439 auto"
+          />
+          <Image
+            src="/movie_match/result_2.svg"
+            alt="Result 2"
+            aspectRatio="208/439 auto"
+          />
+          <Image
+            src="/movie_match/result_3.svg"
+            alt="Result 3"
+            aspectRatio="208/439 auto"
+          />
+          <Image
+            src="/movie_match/result_4.svg"
+            alt="Result 4"
+            aspectRatio="208/439 auto"
+          />
+          <Image
+            src="/movie_match/result_5.svg"
+            alt="Result 5"
+            aspectRatio="208/439 auto"
+          />
+          <Image
+            src="/movie_match/result_6.svg"
+            alt="Result 6"
+            aspectRatio="208/439 auto"
+          />
         </SimpleGrid>
       </Flex>
     </>
