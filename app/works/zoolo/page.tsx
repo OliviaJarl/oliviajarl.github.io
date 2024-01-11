@@ -4,11 +4,13 @@ import Details from "../components/Details";
 import Reflection from "../components/Reflection";
 import zooloData from "@/app/data/zoolo";
 import DesignProcessElement from "../components/DesignProcessElement";
+import {
+  bottomMarginWork,
+  bottomMarginHeading,
+  sideMarginsWork,
+} from "@/app/constants";
 
 export default function Zoolo() {
-  const bottomMargin = { base: "10px", md: "40px" };
-  const bottomMarginHeading = { base: "10px", md: "25px" };
-
   return (
     <>
       <Image
@@ -22,11 +24,11 @@ export default function Zoolo() {
         {zooloData["title"]}
       </Heading>
       <Flex
-        marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
-        marginRight={{ base: "30px", md: "40px", xl: "270px" }}
+        marginLeft={sideMarginsWork}
+        marginRight={sideMarginsWork}
         flexDir="column"
       >
-        <Flex marginBottom={bottomMargin} flexDir="column">
+        <Flex marginBottom={bottomMarginWork} flexDir="column">
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
           </Heading>
@@ -44,7 +46,7 @@ export default function Zoolo() {
           columns={{ sm: 1, md: 3, lg: 5 }}
           spacing={4}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {zooloData["process_overview"].map((process) => (
             <ProcessOverview
@@ -68,7 +70,7 @@ export default function Zoolo() {
         <Heading size="lg" marginBottom={bottomMarginHeading}>
           Result
         </Heading>
-        <Text marginBottom={bottomMargin}>{zooloData["results"]}</Text>
+        <Text marginBottom={bottomMarginWork}>{zooloData["results"]}</Text>
         <Image
           src="/zoolo/result1_500.jpg"
           srcSet="/zoolo/result1_500.jpg 500w, /zoolo/result1_1000.jpg 1000w, /zoolo/result1_1300.jpg 1300w"
@@ -77,7 +79,7 @@ export default function Zoolo() {
         />
         <Flex
           flexDir={{ base: "column", md: "row" }}
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           <Image
             src="/zoolo/result2.png"
@@ -99,7 +101,7 @@ export default function Zoolo() {
           columns={{ sm: 1, md: 2, lg: 3 }}
           spacing={8}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {zooloData["reflections"].map((reflection) => (
             <Reflection

@@ -1,6 +1,5 @@
 import {
   Box,
-  Center,
   Image,
   Heading,
   Flex,
@@ -13,10 +12,10 @@ import Details from "../components/Details";
 import Reflection from "../components/Reflection";
 import alarmUnit from "@/app/data/alarm_unit";
 import DesignProcessElement from "../components/DesignProcessElement";
+import { bottomMarginWork, bottomMarginHeading, sideMarginsWork } from "@/app/constants";
+
 
 export default function AlarmUnit() {
-  const bottomMargin = { base: "10px", md: "40px" };
-  const bottomMarginHeading = { base: "10px", md: "25px" };
   return (
     <>
       <Box position="relative">
@@ -39,8 +38,8 @@ export default function AlarmUnit() {
         />
       </Box>
       <Flex
-        marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
-        marginRight={{ base: "30px", md: "40px", xl: "270px" }}
+        marginLeft={sideMarginsWork}
+        marginRight={sideMarginsWork}
         flexDir="column"
       >
         <Heading
@@ -50,7 +49,7 @@ export default function AlarmUnit() {
         >
           {alarmUnit["title"]}
         </Heading>
-        <Flex marginBottom={bottomMargin} flexDir="column">
+        <Flex marginBottom={bottomMarginWork} flexDir="column">
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
           </Heading>
@@ -68,7 +67,7 @@ export default function AlarmUnit() {
           columns={{ sm: 1, md: 3 }}
           spacing={4}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {alarmUnit["process_overview"].map((process) => (
             <ProcessOverview
@@ -106,7 +105,7 @@ export default function AlarmUnit() {
           </Link>{" "}
           rendered.
         </Text>
-        <Text marginBottom={bottomMargin}>{alarmUnit["results3"]}</Text>
+        <Text marginBottom={bottomMarginWork}>{alarmUnit["results3"]}</Text>
         <Image
           src="/alarm_unit/systemmodel500.webp"
           srcSet="/alarm_unit/systemmodel1500.webp 1500w, /alarm_unit/systemmodel800.webp 800w, /alarm_unit/systemmodel500.webp 500w"
@@ -143,7 +142,7 @@ export default function AlarmUnit() {
           columns={{ base: 1, md: 2 }}
           spacing={8}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {alarmUnit["reflections"].map((reflection) => (
             <Reflection

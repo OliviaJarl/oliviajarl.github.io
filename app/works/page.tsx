@@ -3,6 +3,7 @@ import { SimpleGrid } from "@chakra-ui/react";
 import WorkSectionCard from "./components/WorkSectionCard";
 import projects from "../data/projects";
 import { motion } from "framer-motion";
+import { sideMargins } from "../constants";
 
 export default function Works() {
   const container = {
@@ -20,8 +21,16 @@ export default function Works() {
       <SimpleGrid
         columns={{ sm: 1, md: 2 }}
         spacing={{ base: 5, md: 8 }}
-        marginLeft={{ base: "15px", md: "25px", lg: "50px" }}
-        marginRight={{ base: "15px", md: "25px", lg: "50px" }}
+        marginLeft={{
+          base: sideMargins["base"],
+          md: sideMargins["md"],
+          lg: sideMargins["lg"],
+        }}
+        marginRight={{
+          base: "15px",
+          md: sideMargins["md"],
+          lg: sideMargins["lg"],
+        }}
         marginTop={{ base: "15px", sm: "25px", md: "35px" }}
         marginBottom={{ base: "15px", sm: "25px", md: "35px" }}
         justifyContent="center"

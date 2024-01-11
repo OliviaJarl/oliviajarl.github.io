@@ -3,12 +3,13 @@ import { Box, GridItem, Grid, Heading } from "@chakra-ui/react";
 import Education from "./Education";
 import Work from "./Work";
 import Skills from "./Skills";
+import { sideMargins } from "@/app/constants";
 
 const ResumeGrid = () => {
   return (
     <Box
-      marginLeft={{ base: "15px", md: "60px", lg: "90px", xl: "200px" }}
-      marginRight={{ base: "15px", md: "60px", lg: "90px", xl: "200px" }}
+      marginLeft={{ base: sideMargins["base"], md: "60px", lg: "90px", xl: "200px" }}
+      marginRight={{ base: sideMargins["base"], md: "60px", lg: "90px", xl: "200px" }}
     >
       <Heading
         size="lg"

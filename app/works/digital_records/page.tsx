@@ -12,9 +12,13 @@ import Details from "../components/Details";
 import Reflection from "../components/Reflection";
 import digitalRecords from "@/app/data/digital_records";
 import DesignProcessElement from "../components/DesignProcessElement";
+import {
+  bottomMarginWork,
+  bottomMarginHeading,
+  sideMarginsWork,
+} from "@/app/constants";
+
 export default function Zoolo() {
-  const bottomMargin = { base: "10px", md: "40px" };
-  const bottomMarginHeading = { base: "10px", md: "25px" };
   return (
     <>
       <Center>
@@ -27,8 +31,8 @@ export default function Zoolo() {
         />
       </Center>
       <Flex
-        marginLeft={{ base: "30px", md: "40px", xl: "270px" }}
-        marginRight={{ base: "30px", md: "40px", xl: "270px" }}
+        marginLeft={sideMarginsWork}
+        marginRight={sideMarginsWork}
         flexDir="column"
       >
         <Heading
@@ -38,7 +42,7 @@ export default function Zoolo() {
         >
           {digitalRecords["title"]}
         </Heading>
-        <Flex marginBottom={bottomMargin} flexDir="column">
+        <Flex marginBottom={bottomMarginWork} flexDir="column">
           <Heading size="lg" marginBottom={bottomMarginHeading}>
             About the project
           </Heading>
@@ -56,7 +60,7 @@ export default function Zoolo() {
           columns={{ sm: 1, md: 3, lg: 5 }}
           spacing={4}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {digitalRecords["process_overview"].map((process) => (
             <ProcessOverview
@@ -80,7 +84,7 @@ export default function Zoolo() {
         <Heading size="lg" marginBottom={bottomMarginHeading}>
           Result
         </Heading>
-        <Text marginBottom={bottomMargin}>{digitalRecords["results"]}</Text>
+        <Text marginBottom={bottomMarginWork}>{digitalRecords["results"]}</Text>
         <VStack>
           <SimpleGrid
             columns={{ sm: 1, lg: 2 }}
@@ -115,7 +119,7 @@ export default function Zoolo() {
             aspectRatio="1500/2121 auto"
             alt="Project poster"
             w={{ base: "100%", md: "60%" }}
-            marginBottom={bottomMargin}
+            marginBottom={bottomMarginWork}
           />
         </VStack>
         <Heading size="lg" marginBottom={bottomMarginHeading}>
@@ -125,7 +129,7 @@ export default function Zoolo() {
           columns={{ base: 1, md: 2 }}
           spacing={8}
           justifyContent="center"
-          marginBottom={bottomMargin}
+          marginBottom={bottomMarginWork}
         >
           {digitalRecords["reflections"].map((reflection) => (
             <Reflection
