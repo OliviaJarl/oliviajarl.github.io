@@ -27,15 +27,6 @@ const theme = extendTheme({ config,
     },
   },
   components: {
-    Text: {
-      baseStyle: {
-        fontSize: {
-          base: "xs",
-          sm: "md",
-          md: "lg",
-        }
-      },
-    },
     Heading: {
       baseStyle: {
         color: "#283141"
