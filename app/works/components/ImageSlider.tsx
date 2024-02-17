@@ -2,6 +2,7 @@ import { Center, IconButton, Image, VStack, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { BsChevronCompactLeft } from "react-icons/bs";
 import { BsChevronCompactRight } from "react-icons/bs";
+import { mainHeadingBottomMargin } from "@/app/constants";
 
 interface SlideImage {
   id: number;
@@ -28,7 +29,7 @@ const ImageSlider = ({ slides }: Props) => {
   };
 
   return (
-    <VStack marginBottom={{ base: "10px", md: "40px" }}>
+    <VStack marginBottom={mainHeadingBottomMargin}>
       <Center marginBottom={{ base: "5px", md: "20px" }}>
         <IconButton
           bg="none"

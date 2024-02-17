@@ -34,7 +34,7 @@ const Description = () => {
         marginLeft={{ base: "0px", lg: "40px" }}
         marginTop={{ base: "10px", md: "0px" }}
       >
-        <Text>Hi, I am Olivia!</Text>
+        <Text fontSize={"2xl"}>Hi, I am Olivia!</Text>
         <Text>
           I study Industrial design engineering at Chalmers University of
           Technology and am currently doing my last year in the master’s

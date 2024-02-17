@@ -46,7 +46,7 @@ export function Footer() {
           </Link>
         </Flex>
         <Flex>
-          <Text align="center">Designed and coded by Olivia Jarl, 2023.</Text>
+          <Text align="center">Made in React by Olivia Jarl, 2024</Text>
         </Flex>
       </footer>
     </Center>

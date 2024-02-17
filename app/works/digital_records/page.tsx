@@ -16,6 +16,7 @@ import {
   bottomMarginWork,
   bottomMarginHeading,
   sideMarginsWork,
+  mainHeadingBottomMargin,
 } from "@/app/constants";
 
 export default function Zoolo() {
@@ -37,7 +38,7 @@ export default function Zoolo() {
       >
         <Heading
           size="2xl"
-          marginBottom={{ base: "10px", md: "25px" }}
+          marginBottom={mainHeadingBottomMargin}
           textAlign="center"
         >
           {digitalRecords["title"]}
