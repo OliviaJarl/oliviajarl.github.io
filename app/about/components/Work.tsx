@@ -11,8 +11,13 @@ const Work = () => {
         Work experience
       </Heading>
       <ResumeItem
+        heading="Master thesis student at Ascom Sweden"
+        description="In our thesis, we study how conventional mobile communication devices can be complemented with alternative, touchless interfaces in hospitals."
+        time="01.2024 -"
+      />
+      <ResumeItem
         heading="Designer at Wiretronic's AI division, Wirevision"
-        description="I mainly worked with graphic design, and some of my tasks were making user manuals, symbols, and illustrations. I also made app design proposals for meetings with potential customers."
+        description="I have worked a lot with graphic design, including designing user manuals, symbols, and illustrations. I have also created app design proposals for meetings with potential customers."
         time="06.2023 -"
       />
       <ResumeItem

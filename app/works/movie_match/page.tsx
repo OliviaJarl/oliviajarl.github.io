@@ -14,6 +14,7 @@ import {
   bottomMarginWork,
   bottomMarginHeading,
   sideMarginsWork,
+  mainHeadingBottomMargin,
 } from "@/app/constants";
 
 export default function MovieMatch() {
@@ -30,7 +31,11 @@ export default function MovieMatch() {
         marginRight={sideMarginsWork}
         flexDir="column"
       >
-        <Heading size="2xl" marginBottom={"10px"} textAlign="center">
+        <Heading
+          size="2xl"
+          marginBottom={mainHeadingBottomMargin}
+          textAlign="center"
+        >
           {movieMatch["title"]}
         </Heading>
         <Flex marginBottom={bottomMarginWork} flexDir="column">

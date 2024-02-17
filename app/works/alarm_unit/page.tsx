@@ -12,8 +12,12 @@ import Details from "../components/Details";
 import Reflection from "../components/Reflection";
 import alarmUnit from "@/app/data/alarm_unit";
 import DesignProcessElement from "../components/DesignProcessElement";
-import { bottomMarginWork, bottomMarginHeading, sideMarginsWork } from "@/app/constants";
-
+import {
+  bottomMarginWork,
+  bottomMarginHeading,
+  sideMarginsWork,
+  mainHeadingBottomMargin,
+} from "@/app/constants";
 
 export default function AlarmUnit() {
   return (
@@ -44,7 +48,7 @@ export default function AlarmUnit() {
       >
         <Heading
           size="2xl"
-          marginBottom={{ base: "10px", md: "25px" }}
+          marginBottom={mainHeadingBottomMargin}
           textAlign="center"
         >
           {alarmUnit["title"]}

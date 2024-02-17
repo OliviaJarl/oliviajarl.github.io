@@ -8,6 +8,7 @@ import {
   bottomMarginWork,
   bottomMarginHeading,
   sideMarginsWork,
+  mainHeadingBottomMargin,
 } from "@/app/constants";
 
 export default function Zoolo() {
@@ -20,7 +21,11 @@ export default function Zoolo() {
         aspectRatio="1280/643 auto"
         marginBottom={{ base: "10px", md: "30px" }}
       />
-      <Heading size="2xl" marginBottom={"10px"} textAlign="center">
+      <Heading
+        size="2xl"
+        marginBottom={mainHeadingBottomMargin}
+        textAlign="center"
+      >
         {zooloData["title"]}
       </Heading>
       <Flex

@@ -12,7 +12,12 @@ import Details from "../components/Details";
 import bookingSite from "@/app/data/booking_site";
 import DesignProcessElement from "../components/DesignProcessElement";
 import ImageSlider from "../components/ImageSlider";
-import { bottomMarginWork, bottomMarginHeading, sideMarginsWork } from "@/app/constants";
+import {
+  bottomMarginWork,
+  bottomMarginHeading,
+  sideMarginsWork,
+  mainHeadingBottomMargin,
+} from "@/app/constants";
 
 export default function Booking() {
   return (
@@ -34,7 +39,7 @@ export default function Booking() {
       >
         <Heading
           size="2xl"
-          marginBottom={{ base: "10px", md: "25px" }}
+          marginBottom={mainHeadingBottomMargin}
           textAlign="center"
         >
           {bookingSite["title"]}
