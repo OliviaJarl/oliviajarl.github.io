@@ -38,19 +38,31 @@ const Introduction = () => {
         animate="show"
       >
         <Box
-          marginRight={{ base: "0px", md: "10px", lg: "20px" }}
+          marginRight={{
+            base: "0px",
+            md: "35px",
+            lg: "35px",
+            xl: "40px",
+            "2xl": "90px",
+          }}
           as={motion.div}
           variants={item}
         >
           <Text
-            fontSize={{ base: "lg", sm: "2xl", md: "3xl", lg: "4xl" }}
+            fontSize={{
+              base: "lg",
+              sm: "2xl",
+              md: "2xl",
+              lg: "3xl",
+              xl: "4xl",
+            }}
             align={{ base: "center", md: "left" }}
           >
             Hi! My name is Olivia, I am an engineering student at Chalmers
             University of Technology.
           </Text>
           <Text
-            fontSize={{ base: "sm", sm: "lg", md: "2xl" }}
+            fontSize={{ base: "sm", sm: "lg", md: "xl", lg: "2xl", xl: "3xl" }}
             align={{ base: "center", md: "left" }}
           >
             I do UX design, and I also have an interest in front-end
@@ -69,7 +81,7 @@ const Introduction = () => {
             src="/profile_picture500.jpg"
             srcSet="/profile_picture1500.jpg 1500w, /profile_picture1000.jpg 1000w, /profile_picture500.jpg 500w"
             aspectRatio="1/1 auto"
-            w={{ base: "225px", sm: "300px", md: "800px" }}
+            w={{ base: "225px", sm: "300px", md: "600px", lg: "800px" }}
             alt="Profile image"
             borderRadius={300}
             zIndex={1}
