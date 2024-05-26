@@ -78,8 +78,8 @@ const Introduction = () => {
           variants={item}
         >
           <Image
-            src="/profile_picture500.jpg"
-            srcSet="/profile_picture1500.jpg 1500w, /profile_picture1000.jpg 1000w, /profile_picture500.jpg 500w"
+            src="/olivia_square_500.jpg"
+            srcSet="/olivia_bild_square_1339.jpg 1339w, /olivia_square_1000.jpg 1000w, /olivia_square_500.jpg 500w"
             aspectRatio="1/1 auto"
             w={{ base: "225px", sm: "300px", md: "600px", lg: "800px" }}
             alt="Profile image"
@@ -91,10 +91,10 @@ const Introduction = () => {
               src="/sunglasses.svg"
               alt="Sunglasses on hover"
               zIndex={2}
-              w="25%"
+              w="27%"
               position="absolute"
-              top="36%"
-              left="45%"
+              top="27.5%"
+              left="28.8%"
             />
           ) : null}
         </Box>
