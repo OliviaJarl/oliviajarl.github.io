@@ -12,18 +12,18 @@ const Work = () => {
       </Heading>
       <ResumeItem
         heading="Master thesis student at Ascom Sweden"
-        description="In our thesis, we study how conventional mobile communication devices can be complemented with alternative, touchless interfaces in hospitals."
-        time="01.2024 -"
+        description="In our thesis, we studied how conventional healthcare communication devices could be supplemented with touchless interfaces."
+        time="2024.01 - 2024.06"
       />
       <ResumeItem
         heading="Designer at Wiretronic's AI division, Wirevision"
-        description="I have worked a lot with graphic design, including designing user manuals, symbols, and illustrations. I have also created app design proposals for meetings with potential customers."
-        time="06.2023 -"
+        description="I created UI design proposals for meetings with potential customers and did graphic design, including designing user manuals, symbols, and illustrations."
+        time="2023.06 - 2024.01"
       />
       <ResumeItem
         heading="Seasonal work as a salesperson at Systembolaget"
         description="I had customer meetings, worked in the cash register and unpacked goods."
-        time="06.2020 - 08.2022"
+        time="2020.06 - 2022.08"
       />
     </Flex>
   );
