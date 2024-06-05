@@ -13,18 +13,17 @@ const Education = () => {
       <ResumeItem
         heading="Interaction design and technologies - Master's programme, Chalmers
         University of Technology"
-        description="To supplement the design courses, I have chosen programming courses, both
-        front-end and back-end, as elective courses."
-        time="08.2022 -"
+        description="Master’s thesis: Touchless interfaces for healthcare communication"
+        time="2022.08 - 2024.06"
       />
       <ResumeItem
         heading="Industrial design engineering - BSE, Chalmers University of Technology"
-        description="Bachelor's thesis: Portable, digital medical record to the emergency department"
-        time="08.2019 - 06.2022"
+        description="Bachelor’s thesis: Portable, digital medical record to the emergency department"
+        time="2019.08 - 2022.06"
       />
       <ResumeItem
         heading="Medical school, University of Gothenburg"
-        time="01.2017 - 10.2018"
+        time="2017.01 - 2018.10"
       />
     </Flex>
   );

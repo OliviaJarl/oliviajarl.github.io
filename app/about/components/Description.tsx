@@ -36,11 +36,11 @@ const Description = () => {
       >
         <Text fontSize={"2xl"}>Hi, I am Olivia!</Text>
         <Text>
-          I study Industrial design engineering at Chalmers University of
-          Technology and am currently doing my last year in the master’s
-          programme Interaction Design and Technologies. Due to the combination
-          of my bachelor’s and master’s programmes, I have experience designing
-          both digital and physical products.
+          I recently graduated from the Industrial Design Engineering program at
+          Chalmers University of Technology with a master’s degree in
+          Interaction Design and Technologies. The combination of my bachelor’s
+          and master’s programs has given me experience designing both physical
+          and digital products.
         </Text>
         <Text>
           Among the most important things I have taken away from my education is
