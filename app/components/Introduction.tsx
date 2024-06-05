@@ -52,17 +52,16 @@ const Introduction = () => {
             fontSize={{
               base: "lg",
               sm: "2xl",
-              md: "2xl",
+              md: "3xl",
               lg: "3xl",
               xl: "4xl",
             }}
             align={{ base: "center", md: "left" }}
           >
-            Hi! My name is Olivia, I am an engineering student at Chalmers
-            University of Technology.
+            Hello! I am Olivia, an industrial design engineer.
           </Text>
           <Text
-            fontSize={{ base: "sm", sm: "lg", md: "xl", lg: "2xl", xl: "3xl" }}
+            fontSize={{ base: "sm", sm: "lg", md: "2xl", lg: "2xl", xl: "3xl" }}
             align={{ base: "center", md: "left" }}
           >
             I do UX design, and I also have an interest in front-end
@@ -81,7 +80,13 @@ const Introduction = () => {
             src="/olivia_square_500.jpg"
             srcSet="/olivia_bild_square_1339.jpg 1339w, /olivia_square_1000.jpg 1000w, /olivia_square_500.jpg 500w"
             aspectRatio="1/1 auto"
-            w={{ base: "225px", sm: "300px", md: "600px", lg: "800px" }}
+            w={{
+              base: "225px",
+              sm: "275px",
+              md: "430px",
+              lg: "460px",
+              xl: "500px",
+            }}
             alt="Profile image"
             borderRadius={300}
             zIndex={1}
