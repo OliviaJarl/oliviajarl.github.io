@@ -26,7 +26,7 @@ const DesignProcesElementTest = ({
           <Heading size="md">{title}</Heading>
           <Text
             marginRight={includeImage ? { md: "30px" } : "0px"}
-            marginBottom={includeImage ? { base: "12px", md: "0px" } : "0px"}
+            marginBottom={includeImage ? { base: "14px", md: "0px" } : "0px"}
           >
             {description}
           </Text>
@@ -35,7 +35,7 @@ const DesignProcesElementTest = ({
           <Box
             w={{ base: "100%", md: "40%" }}
             justifyContent="center"
-            marginBottom={{ base: "10px", md: "0px" }}
+            marginBottom={{ base: "12px", md: "0px" }}
           >
             <Image
               w="100%"
