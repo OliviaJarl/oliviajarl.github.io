@@ -5,7 +5,7 @@ const zooloData = {
     poster_image_small: "/zoolo/poster_image359.png",
     details: 
         {
-        role:"In this projects we did everything together.",
+        role:"In this project we did everything together.",
         challenge:"Current tool storage solutions are not adapted to the children´s physical and cognitive skills, nor do they increase motivationwhen cleaning up.",
         projectTime:"18 weeks, half time"
     }

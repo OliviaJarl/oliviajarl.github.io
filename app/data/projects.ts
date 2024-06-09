@@ -1,6 +1,43 @@
 const projects = [
-{
-    name: "Portable, digital medical record",
+    {
+        name: "Myco Main & Myco Mini",
+        image: "/mini_main/thumbnail.png",
+        thumbnailSrcSet: "/mini_main/thumbnail.png 200w, /mini_main/thumbnail.png 500w, /mini_main/thumbnail.png 842w",
+        description: "This was my master's thesis project, which my partner and I did in collaboration with Ascom. We studied how touchless interfaces could be integrated into healthcare communication devices to support caregivers' workflow.",
+        url: "/works/mini_main",
+        gradient: "gradient3",
+        gradient_balls: [
+        {
+            gradient: "g15",
+            id: 15
+        },
+        {
+            gradient: "g16",
+            id: 16
+        },
+        {
+            gradient: "g17",
+            id: 17
+        }
+        ],
+        tags: [
+            {
+            id: 1,
+            title: "User studies",
+            colorBackground: "#DCEDEC",
+            colorTitle: "#267169"
+            },
+            {
+            id: 2,
+            title: "UI design",
+            colorBackground: "#E9E5FF",
+            colorTitle: "#6256A3",
+            }, 
+        ],
+        id: 2,
+    },
+    {
+    name: "Portable digital medical record",
     image: "/digital_records/thumbnail.svg",
     thumbnailSrcSet: "",
     description: "This project was my bachelor's thesis, where we developed a portable, digital medical record for a psychiatric emergency department.",
