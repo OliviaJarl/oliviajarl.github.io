@@ -110,12 +110,12 @@ export default function MiniMain() {
             <Image
               alt="The affinity diagram"
               src="/mini_main/affinity_diagram.webp"
-              w="50%"
+              w={{ base: "100%", md: "50%" }}
             />
             <Image
               alt="One of the personas"
-              src="/mini_main/persona.svg"
-              w="50%"
+              src="/mini_main/Persona.svg"
+              w={{ base: "100%", md: "50%" }}
             />
           </Stack>
         </VStack>
@@ -204,7 +204,7 @@ export default function MiniMain() {
           {miniMain["design_4"]}
         </Text>
         <VStack
-          spacing={{ base: "10px", md: "30px", lg: "40px" }}
+          spacing={{ base: "20px", md: "30px", lg: "40px" }}
           marginBottom={bottomMarginWork}
         >
           {miniMain["design_images"].map((image) => (
