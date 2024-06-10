@@ -10,6 +10,7 @@ import {
   Text,
   SimpleGrid,
   VStack,
+  Stack,
 } from "@chakra-ui/react";
 import ProcessOverview from "../components/ProcessOverview";
 import Details from "../components/Details";
@@ -23,17 +24,17 @@ import {
   mainHeadingBottomMargin,
 } from "@/app/constants";
 
-export default function DigitalRecord() {
+export default function MiniMain() {
   return (
     <>
       <Center>
         <Image
-          src={miniMain["poster_image_small"]}
-          alt="Zoolo poster image"
+          src={miniMain["poster_image"]}
+          alt="Mini main poster image"
           srcSet={miniMain["posterSrcSet"]}
-          aspectRatio="1280/643 auto"
-          marginBottom={{ base: "10px", md: "30px" }}
-          w={"30%"}
+          aspectRatio="1500/773 auto"
+          w={{ base: "100vw", lg: "70vw" }}
+          marginBottom={{ base: "20px", md: "35px" }}
         />
       </Center>
       <Flex
@@ -87,6 +88,69 @@ export default function DigitalRecord() {
           ))}
         </SimpleGrid>
         <Heading size="lg" marginBottom={bottomMarginHeading}>
+          Design process
+        </Heading>
+        <DesignProcessElement
+          title="Literature studies"
+          description={miniMain["literature_studies"]}
+          images=""
+        />
+        <DesignProcessElement
+          title="User studies"
+          description={miniMain["user_studies"]}
+          images="/mini_main/user_studies.webp"
+        />
+        <VStack marginBottom={bottomMarginWork} alignItems="left">
+          <Heading size="md">Analyse</Heading>
+          <Text marginBottom="14px">{miniMain["analyse"]}</Text>
+          <Stack
+            flexDir={{ base: "column", md: "row" }}
+            spacing={{ base: "10px", md: "20px" }}
+          >
+            <Image
+              alt="The affinity diagram"
+              src="/mini_main/affinity_diagram.webp"
+              w="50%"
+            />
+            <Image
+              alt="One of the personas"
+              src="/mini_main/persona.svg"
+              w="50%"
+            />
+          </Stack>
+        </VStack>
+        <DesignProcessElement
+          title="Ideate"
+          description={miniMain["ideate"]}
+          images=""
+        />
+        <VStack marginBottom={bottomMarginWork} alignItems="left">
+          <Heading size="md">Prototype I</Heading>
+          <Text marginBottom="14px">{miniMain["prototype_1"]}</Text>
+          <Image
+            alt="Visualisations of some of the ideas"
+            src="/mini_main/prototype1.webp"
+          />
+        </VStack>
+        <DesignProcessElement
+          title="Evaluate I"
+          description={miniMain["evaluate_1"]}
+          images=""
+        />
+        <VStack marginBottom={bottomMarginWork} alignItems="left">
+          <Heading size="md">Prototype II</Heading>
+          <Text marginBottom="14px">{miniMain["prototype_2"]}</Text>
+          <Image
+            alt="Initial sketches of our concepts"
+            src="/mini_main/Prototype2.svg"
+          />
+        </VStack>
+        <DesignProcessElement
+          title="Evaluate II"
+          description={miniMain["evaluate_2"]}
+          images="/mini_main/usability_testing.svg"
+        />
+        <Heading size="lg" marginBottom={bottomMarginHeading}>
           Result
         </Heading>
         <Text marginBottom={{ base: "15px", md: "20px", lg: "35px" }}>
@@ -127,7 +191,50 @@ export default function DigitalRecord() {
         <Heading size="md" marginBottom="10px">
           Design
         </Heading>
-        <Text>{miniMain["result_problems"]}</Text>
+        <Text marginBottom={{ base: "10px", md: "20px" }}>
+          {miniMain["design_1"]}
+        </Text>
+        <Text marginBottom={{ base: "10px", md: "20px" }}>
+          {miniMain["design_2"]}
+        </Text>
+        <Text marginBottom={{ base: "10px", md: "20px" }}>
+          {miniMain["design_3"]}
+        </Text>
+        <Text marginBottom={{ sm: "10px", md: "20px", lg: "40px" }}>
+          {miniMain["design_4"]}
+        </Text>
+        <VStack
+          spacing={{ base: "10px", md: "30px", lg: "40px" }}
+          marginBottom={bottomMarginWork}
+        >
+          {miniMain["design_images"].map((image) => (
+            <Image
+              key={image.key}
+              src={image.src}
+              srcSet={image.srcSet}
+              alt={image.alt}
+              aspectRatio={image.aspectRatio}
+              w={{ base: "100%", md: "80%" }}
+            />
+          ))}
+        </VStack>
+        <Heading size="lg" marginBottom={bottomMarginHeading}>
+          Reflection
+        </Heading>
+        <SimpleGrid
+          columns={{ base: 1 }}
+          spacing={8}
+          justifyContent="center"
+          marginBottom={bottomMarginWork}
+        >
+          {miniMain["reflections"].map((reflection) => (
+            <Reflection
+              key={reflection.id}
+              title={reflection.title}
+              content={reflection.content}
+            />
+          ))}
+        </SimpleGrid>
       </Flex>
     </>
   );

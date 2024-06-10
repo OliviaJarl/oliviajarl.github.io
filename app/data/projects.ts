@@ -1,11 +1,11 @@
 const projects = [
     {
         name: "Myco Main & Myco Mini",
-        image: "/mini_main/thumbnail.png",
-        thumbnailSrcSet: "/mini_main/thumbnail.png 200w, /mini_main/thumbnail.png 500w, /mini_main/thumbnail.png 842w",
+        image: "/mini_main/thumbnail200.webp",
+        thumbnailSrcSet: "/mini_main/thumbnail200.webp 200w, /mini_main/thumbnail500.webp 500w, /mini_main/thumbnail842.webp 842w",
         description: "This was my master's thesis project, which my partner and I did in collaboration with Ascom. We studied how touchless interfaces could be integrated into healthcare communication devices to support caregivers' workflow.",
         url: "/works/mini_main",
-        gradient: "gradient3",
+        gradient: "gradient6",
         gradient_balls: [
         {
             gradient: "g15",
@@ -29,9 +29,9 @@ const projects = [
             },
             {
             id: 2,
-            title: "UI design",
-            colorBackground: "#E9E5FF",
-            colorTitle: "#6256A3",
+            title: "Touchless interfaces",
+            colorBackground: "#E1FDFB",
+            colorTitle: "#2F8680"
             }, 
         ],
         id: 2,
@@ -72,7 +72,7 @@ const projects = [
         id: 2,
         title: "UI design",
         colorBackground: "#E9E5FF",
-        colorTitle: "#6256A3"
+        colorTitle: "#6256A3",
         }, 
     ],
     id: 1,
