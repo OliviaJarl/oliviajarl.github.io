@@ -19,7 +19,7 @@ import {
   mainHeadingBottomMargin,
 } from "@/app/constants";
 
-export default function Zoolo() {
+export default function DigitalRecord() {
   return (
     <>
       <Center>

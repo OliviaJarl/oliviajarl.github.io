@@ -1,11 +1,13 @@
 import { Image, Flex, Text, Link, VStack } from "@chakra-ui/react";
+import { sideMargins } from "@/app/constants";
+
 const Description = () => {
   return (
     <Flex
       flexDir={{ base: "column", lg: "row" }}
       alignItems="center"
-      marginLeft={{ base: "15px", md: "60px", xl: "200px" }}
-      marginRight={{ base: "15px", md: "60px", xl: "200px" }}
+      marginLeft={{ base: sideMargins["base"], md: "60px", xl: "200px" }}
+      marginRight={{ base: sideMargins["base"], md: "60px", xl: "200px" }}
       marginBottom={{ base: "15px", md: "30px" }}
       marginTop={{ base: "10px", md: "30px" }}
     >
