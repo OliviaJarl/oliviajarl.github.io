@@ -9,7 +9,7 @@ const Details = ({ projectTime, role, challenge }: Props) => {
   return (
     <Center marginBottom={bottomMarginWork}>
       <TableContainer w={{ base: "100%", md: "95%" }}>
-        <Table variant="simple" size="md">
+        <Table variant="simple" size={{ base: "sm", sm: "md" }}>
           <Tbody whiteSpace="pre">
             <Tr>
               <Td fontWeight="bold" verticalAlign="top">
