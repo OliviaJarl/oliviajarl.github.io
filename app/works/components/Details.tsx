@@ -2,7 +2,7 @@ import { TableContainer, Table, Tbody, Tr, Td, Center } from "@chakra-ui/react";
 import { bottomMarginWork } from "@/app/constants";
 interface Props {
   projectTime: string;
-  role: string;
+  role?: string;
   challenge: string;
 }
 const Details = ({ projectTime, role, challenge }: Props) => {
@@ -17,12 +17,14 @@ const Details = ({ projectTime, role, challenge }: Props) => {
               </Td>
               <Td whiteSpace="normal">{challenge}</Td>
             </Tr>
-            <Tr borderBottom="0px">
-              <Td fontWeight="bold" verticalAlign="top">
-                Role
-              </Td>
-              <Td whiteSpace="normal">{role}</Td>
-            </Tr>
+            {role && (
+              <Tr borderBottom="0px">
+                <Td fontWeight="bold" verticalAlign="top">
+                  Role
+                </Td>
+                <Td whiteSpace="normal">{role}</Td>
+              </Tr>
+            )}
             <Tr>
               <Td fontWeight="bold">Project time</Td>
               <Td>{projectTime}</Td>
