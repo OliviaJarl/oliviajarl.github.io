@@ -34,6 +34,39 @@ const projects = [
             colorTitle: "#2F8680"
             }, 
         ],
+        id: 1,
+    },
+    {
+        name: "MHStats",
+        image: "/mhstats/thumbnail.svg",
+        thumbnailSrcSet: "",
+        description: "A React project where I created a website that displays statistics of the Swedish charity event Musikhjälpen. The data was fetched from Sveriges Radio's API and Spotify's API.",
+        url: "/works/mhstats",
+        gradient: "gradient7",
+        gradient_balls: [
+            {
+                gradient: "g18",
+                id: 18
+            },
+            {
+                gradient: "g19",
+                id: 19
+            }
+        ],
+        tags: [
+            {
+                id: 1,
+                title: "React",
+                colorBackground: "#DBF2FF",
+                colorTitle: "#416275"
+            },
+            {
+            id: 2,
+            title: "UI design",
+            colorBackground: "#E9E5FF",
+            colorTitle: "#6256A3",
+            }, 
+        ],
         id: 2,
     },
     {
@@ -75,7 +108,7 @@ const projects = [
         colorTitle: "#6256A3",
         }, 
     ],
-    id: 1,
+    id: 3,
 },
 {
     name: "Resource booking site",
@@ -112,7 +145,7 @@ const projects = [
         colorTitle: "#6256A3",
         }, 
     ],
-    id: 2,
+    id: 4,
 },
 {
     name: "Zoolo",
@@ -145,7 +178,7 @@ const projects = [
             colorTitle: "#2D5DA6"
             }, 
         ],
-    id: 3,
+    id: 5,
 },
 {
     name: "Alarm monitoring and control unit",
@@ -182,7 +215,7 @@ const projects = [
         colorTitle: "#424C86",
         }, 
     ],
-    id: 4,
+    id: 6,
 },
 {
     name: "MovieMatch",
@@ -204,18 +237,18 @@ const projects = [
     tags: [
         {
         id: 1,
-        title: "Coding",
-        colorBackground: "#DBF2FF",
-        colorTitle: "#416275"
-        },
-        {
-        id: 2,
         title: "Flutter/Dart",
         colorBackground: "#FDE5FF",
         colorTitle: "#95439C"
         }, 
+        {
+        id: 2,
+        title: "UI design",
+        colorBackground: "#E9E5FF",
+        colorTitle: "#6256A3",
+        }, 
     ],
-    id: 5,
+    id: 7,
 },
 ];
 

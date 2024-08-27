@@ -22,7 +22,7 @@ export default function MovieMatch() {
     <>
       <Image
         src={movieMatch["poster_image"]}
-        alt="MovieMatch poster image"
+        alt="MHStats poster image"
         aspectRatio="1124/466 auto"
         marginBottom={{ base: "10px", md: "30px" }}
       />
