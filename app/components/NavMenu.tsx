@@ -24,7 +24,7 @@ const NavMenu = () => {
         <Link href={"/about"}>
           <Text
             fontSize="2xl"
-            marginRight="40px"
+            marginRight="0px"
             color="brand.100"
             fontWeight={pathname == "/about" ? "bold" : "normal"}
             _hover={{
@@ -32,20 +32,6 @@ const NavMenu = () => {
             }}
           >
             About
-          </Text>
-        </Link>
-        <Link href={"/works"}>
-          <Text
-            fontSize="2xl"
-            color="brand.100"
-            fontWeight={
-              pathname.substring(0, 6) == "/works" ? "bold" : "normal"
-            }
-            _hover={{
-              fontWeight: "bold",
-            }}
-          >
-            Works
           </Text>
         </Link>
       </Flex>
@@ -93,19 +79,6 @@ const NavMenu = () => {
               onClick={() => setDisplayMenu("none")}
             >
               About
-            </Button>
-          </Link>
-          <Link href={"/works"}>
-            <Button
-              color="brand.100"
-              bg="none"
-              fontSize="xl"
-              fontWeight={
-                pathname.substring(0, 6) == "/works" ? "bold" : "normal"
-              }
-              onClick={() => setDisplayMenu("none")}
-            >
-              Works
             </Button>
           </Link>
         </Flex>

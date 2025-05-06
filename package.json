@@ -21,7 +21,7 @@
     "@fontsource/raleway": "^5.0.15",
     "@fontsource/roboto": "^5.0.8",
     "framer-motion": "^10.16.14",
-    "next": "^13",
+    "next": "^15.3.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0"
