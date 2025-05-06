@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    images: {
-      unoptimized: true,  // Detta är rätt konfiguration för att inte optimera bilder.
-    },
-  }
+    images: { unoptimized: true },
+}
   
-  module.exports = nextConfig
+module.exports = nextConfig
