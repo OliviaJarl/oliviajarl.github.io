@@ -160,7 +160,7 @@ const miniMain = {
             key: 3,
             src: "/mini_main/3dprinted500.webp",
             srcSet: "/mini_main/3dprinted500 500w, /mini_main/3dprinted1000.webp 1000w, /mini_main/3dprinted2000.webp 1500w",
-            alt: "3D-printed models",
+            alt: "3Dprinted models",
             aspectRatio: "2000/801 auto",
         },
         {
